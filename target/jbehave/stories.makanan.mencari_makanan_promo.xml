@@ -1,0 +1,17 @@
+<story path="stories/makanan/mencari_makanan_promo.story" title="Find out which products are on sale">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">get the best deals available</inOrderTo>
+  <asA keyword="As a">customer</asA>
+  <iWantTo keyword="I want to">know which products are on sale</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Find products on sale">
+<step outcome="successful">Given a list of products : <parameter>Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</parameter></step>
+<step outcome="successful">When these products are discounted in the same order: <parameter>20%, 0%, 40%</parameter></step>
+<step outcome="successful">Then I should be told about the products : <parameter>Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="Find products with the closest distance">
+<step outcome="successful">Given a list of products : <parameter>Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</parameter></step>
+<step outcome="successful">When the distances between the product and the customer in the same order are : <parameter>0.4, 1.9, 0.8</parameter> in kilometers</step>
+<step outcome="successful">Then I should be told about the products in order : <parameter>Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu</parameter></step>
+</scenario>
+</story>
