@@ -546,6 +546,24 @@
 
 
 
+        var date = new Date(2019, 10, 26,8, 31, 15);
+
+        specified.push([date, 12]);
+        done.push([date,9]);
+        skipped.push([date,3]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2019, 10, 26,8, 32, 48);
+
+        specified.push([date, 9]);
+        done.push([date,9]);
+        skipped.push([date,0]);
+        failing.push([date,0]);
+
+
+
 
         targetPlot = $.jqplot('chart_div', [failing,skipped,done,specified], {
 
@@ -676,7 +694,7 @@
         <li><a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html" >Capabilities</a></li>
         <li><a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html" >Stories</a></li>
     </ul>
-    <span class="date-and-time">Report generated 26-11-2019 08:11</span>
+    <span class="date-and-time">Report generated 26-11-2019 08:32</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>

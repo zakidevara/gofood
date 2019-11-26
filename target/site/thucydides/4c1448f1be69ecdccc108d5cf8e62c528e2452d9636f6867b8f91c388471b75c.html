@@ -31,11 +31,11 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 0.5],
+                ['Passing', 1],
                 
-                ['Pending', 0.25],
+                ['Pending', 0],
                 
-                ['Failing', 0.25],
+                ['Failing', 0],
                 
                 ['Errors',  0]
             ]
@@ -64,20 +64,20 @@
                 marginTop:'15px'
             },
             series:[
-                {label:'2 / 4 tests passed' },
-                {label:'1 / 4 tests pending or not executed'},
-                {label:'1 / 4 tests failed'},
-                {label:'0 / 4 errors'}
+                {label:'3 / 3 tests passed' },
+                {label:'0 / 3 tests pending or not executed'},
+                {label:'0 / 3 tests failed'},
+                {label:'0 / 3 errors'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 0.5],
+                ['Passing', 1],
                 
-                ['Pending', 0.25],
+                ['Pending', 0],
                 
-                ['Failing', 0.25],
+                ['Failing', 0],
                 
                 ['Errors', 0]
             ]
@@ -107,10 +107,10 @@
                 marginTop:'15px'
             },
         series:[
-                {label:'2 / 4 tests passed (0.5% of all test steps)' },
-                {label:'1 / 4 tests pending or not executed (0.25% of all test steps)'},
-                {label:'1 / 4 tests failed (0.25% of all test steps)'},
-                {label:'0 / 4 errors (0% of all test steps)'}
+                {label:'3 / 3 tests passed (1% of all test steps)' },
+                {label:'0 / 3 tests pending or not executed (0% of all test steps)'},
+                {label:'0 / 3 tests failed (0% of all test steps)'},
+                {label:'0 / 3 errors (0% of all test steps)'}
             ]
         });
 
@@ -169,7 +169,7 @@
         <li><a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html" >Capabilities</a></li>
         <li><a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html" >Stories</a></li>
     </ul>
-    <span class="date-and-time">Report generated 26-11-2019 08:11</span>
+    <span class="date-and-time">Report generated 26-11-2019 08:32</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -182,25 +182,23 @@
                 <tr>
                     <td width="375px" valign="top">
                         <div class="test-count-summary">
-                            <span class="test-count-title">4 test scenarios :</span>
+                            <span class="test-count-title">3 test scenarios :</span>
 
                             <span class="test-count">
-                                2
+                                3
                                     <a href="37a9989fbd7c808da877a6f3a45395752068deac0622451f3e5595e47fa62e47.html">passed</a>
                                 ,
                             </span>
 
 
                             <span class="test-count">
-                                1
-                                    <a href="7c3f5148c3b55d5c0c493879d121a820581f780d937000207242bb3eac773fc1.html">pending</a>
-                                ,
+                                0
+pending,
                             </span>
 
                             <span class="test-count">
-                                1
-                                        <a href="9367cb0527061a0ef35cd91aeced411e01c70c9bb6e2eccd39b1f6639893caef.html">failed</a>
-                                    ,
+                                0
+failed,
                             </span>
                             <span class="test-count">
                                 0
@@ -251,13 +249,13 @@ errors
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>4</td>
-            <td>2</td>
-            <td>50%</td>
-            <td>1</td>
-            <td>25%</td>
-            <td>1</td>
-            <td>25%</td>
+            <td>3</td>
+            <td>3</td>
+            <td>100%</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0%</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Manual</td>
@@ -271,13 +269,13 @@ errors
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>4</td>
-            <td>2</td>
-            <td>50%</td>
-            <td>1</td>
-            <td>25%</td>
-            <td>1</td>
-            <td>25%</td>
+            <td>3</td>
+            <td>3</td>
+            <td>100%</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0%</td>
         </tr>
         </body>
     </table>
@@ -295,7 +293,7 @@ errors
   <!-- outcomesForType.withTag(tagName)-->
                 <tr>
                     <td class="bluetext" class="tag-title">
-                        <span class="FAILURE-text">
+                        <span class="SUCCESS-text">
                                 <a href="d9f6adeea9fa0223fb10c47dd92276b9db3fcd97ff4623a8f2a439d1ea159252.html">Makanan</a>
                         </span>
                     </td>
@@ -304,21 +302,21 @@ errors
 
                         <table>
                             <tr>
-                                <td width="50px">50%</td>
+                                <td width="50px">100%</td>
                                 <td width="150px">
                                     <a href="d9f6adeea9fa0223fb10c47dd92276b9db3fcd97ff4623a8f2a439d1ea159252.html">
                                         <div class="percentagebar"
-                                             title="1 out of 4 test pending or not executed"
+                                             title="0 out of 3 test pending or not executed"
                                              style="width: 150px;">
                                             <div class="errorbar"
-                                                 style="width: 112px;"
-                                                 title="0 out of 4 test broken">
+                                                 style="width: 150px;"
+                                                 title="0 out of 3 test broken">
                                                 <div class="failingbar"
-                                                     style="width: 112px;"
-                                                     title="1 out of 4 test failing">
+                                                     style="width: 150px;"
+                                                     title="0 out of 3 test failing">
                                                     <div class="passingbar"
-                                                         style="width: 75px;"
-                                                         title="2 out of 4 test passing">
+                                                         style="width: 150px;"
+                                                         title="3 out of 3 test passing">
                                                     </div>
                                                 </div>
                                             </div>
@@ -371,13 +369,13 @@ errors
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>4</td>
-            <td>2</td>
-            <td>50%</td>
-            <td>1</td>
-            <td>25%</td>
-            <td>1</td>
-            <td>25%</td>
+            <td>3</td>
+            <td>3</td>
+            <td>100%</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0%</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Manual</td>
@@ -391,13 +389,13 @@ errors
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>4</td>
-            <td>2</td>
-            <td>50%</td>
-            <td>1</td>
-            <td>25%</td>
-            <td>1</td>
-            <td>25%</td>
+            <td>3</td>
+            <td>3</td>
+            <td>100%</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0%</td>
         </tr>
         </body>
     </table>
@@ -415,7 +413,7 @@ errors
   <!-- outcomesForType.withTag(tagName)-->
                 <tr>
                     <td class="bluetext" class="tag-title">
-                        <span class="FAILURE-text">
+                        <span class="SUCCESS-text">
                                 <a href="d9f6adeea9fa0223fb10c47dd92276b9db3fcd97ff4623a8f2a439d1ea159252.html">Makanan</a>
                         </span>
                     </td>
@@ -424,21 +422,21 @@ errors
 
                         <table>
                             <tr>
-                                <td width="50px">50%</td>
+                                <td width="50px">100%</td>
                                 <td width="150px">
                                     <a href="d9f6adeea9fa0223fb10c47dd92276b9db3fcd97ff4623a8f2a439d1ea159252.html">
                                         <div class="percentagebar"
-                                             title="1 out of 4 test pending or not executed"
+                                             title="0 out of 3 test pending or not executed"
                                              style="width: 150px;">
                                             <div class="errorbar"
-                                                 style="width: 112px;"
-                                                 title="0 out of 4 test broken">
+                                                 style="width: 150px;"
+                                                 title="0 out of 3 test broken">
                                                 <div class="failingbar"
-                                                     style="width: 112px;"
-                                                     title="1 out of 4 test failing">
+                                                     style="width: 150px;"
+                                                     title="0 out of 3 test failing">
                                                     <div class="passingbar"
-                                                         style="width: 75px;"
-                                                         title="2 out of 4 test passing">
+                                                         style="width: 150px;"
+                                                         title="3 out of 3 test passing">
                                                     </div>
                                                 </div>
                                             </div>
@@ -497,28 +495,7 @@ errors
                                                  class="summary-icon"/>
                                             <span style="display:none">0</span>
                                         </td>
-                                        <td class="lightgreentext">0.27</td>
-                                    </tr>
-
-
-
-
-                                    <tr class="test-PENDING">
-                                        <td><img src="images/pending.png" title="PENDING" class="summary-icon"/>
-                                            
-                                            <span style="display:none">PENDING</span></td>
-                                        <td class="PENDING-text"><a href="6ab6a3dc242486613b8b07c04c1876f68d335c23dc41fe71718b1b56ef18402e.html">Find products with the closest distance </a></td>
-
-                                        <td class="lightgreentext">3</td>
-
-
-                                        <td class="bluetext">
-                                            <img src="images/traffic-in-progress.gif"
-                                                 title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
-                                                 class="summary-icon"/>
-                                            <span style="display:none">0</span>
-                                        </td>
-                                        <td class="lightgreentext">0.02</td>
+                                        <td class="lightgreentext">0.29</td>
                                     </tr>
 
 
@@ -545,11 +522,11 @@ errors
 
 
 
-                                    <tr class="test-FAILURE">
-                                        <td><img src="images/fail.png" title="FAILURE" class="summary-icon"/>
+                                    <tr class="test-SUCCESS">
+                                        <td><img src="images/success.png" title="SUCCESS" class="summary-icon"/>
                                             
-                                            <span style="display:none">FAILURE</span></td>
-                                        <td class="FAILURE-text"><a href="5f0d51eabf0d837e0573f89f2779416a02380b9cf48962e83b4e7b4c01997c17.html">Sort products on sale with the same distance from the highest rate </a></td>
+                                            <span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="5f0d51eabf0d837e0573f89f2779416a02380b9cf48962e83b4e7b4c01997c17.html">Sort products on sale with the same distance from the highest rate </a></td>
 
                                         <td class="lightgreentext">3</td>
 
@@ -560,7 +537,7 @@ errors
                                                  class="summary-icon"/>
                                             <span style="display:none">0</span>
                                         </td>
-                                        <td class="lightgreentext">0.09</td>
+                                        <td class="lightgreentext">0.03</td>
                                     </tr>
                                     </tbody>
                                 </table>

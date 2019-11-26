@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1574730686467</whenMade>
+  <whenMade>1574731965498</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-skip -ignore</metaFilter>
   <meta/>
@@ -33,9 +33,9 @@ Then I should be told about the products in order from the highest rating to the
 
 
 </scenarios>
-      <passed>false</passed>
-      <started>1574730683671</started>
-      <duration>749</duration>
+      <passed>true</passed>
+      <started>1574731958374</started>
+      <duration>712</duration>
     </story>
   </stories>
   <stepMatches/>

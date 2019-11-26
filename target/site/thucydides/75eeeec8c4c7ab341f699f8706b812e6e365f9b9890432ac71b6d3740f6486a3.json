@@ -8,8 +8,8 @@
   "skipped": "0",
   "ignored": "0",
   "pending": "0",
-  "duration": "266",
-  "timestamp": "2019-11-26T08:11:23.764+07:00",
+  "duration": "293",
+  "timestamp": "2019-11-26T08:32:38.523+07:00",
   "user-story": {
     "qualifiedStoryClassName": "mencari_makanan_promo",
     "storyName": "Mencari makanan promo",
@@ -31,8 +31,8 @@
     {
       "number": 1,
       "description": "Given a list of products : {Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium}",
-      "duration": 94,
-      "startTime": 1574730683905,
+      "duration": 64,
+      "startTime": 1574731958704,
       "screenshots": [],
       "result": "SUCCESS",
       "children": []
@@ -40,8 +40,8 @@
     {
       "number": 2,
       "description": "When these products are discounted in the same order: {20%, 0%, 40%}",
-      "duration": 0,
-      "startTime": 1574730684014,
+      "duration": 10,
+      "startTime": 1574731958774,
       "screenshots": [],
       "result": "SUCCESS",
       "children": []
@@ -49,8 +49,8 @@
     {
       "number": 3,
       "description": "Then I should be told about the products : {Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium}",
-      "duration": 16,
-      "startTime": 1574730684014,
+      "duration": 30,
+      "startTime": 1574731958784,
       "screenshots": [],
       "result": "SUCCESS",
       "children": []

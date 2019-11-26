@@ -1,6 +1,6 @@
 #org.jbehave.core.reporters.PostStoryStatisticsCollector
-#Tue Nov 26 08:11:24 ICT 2019
-duration=0
+#Tue Nov 26 08:32:39 ICT 2019
+duration=10
 notAllowed=0
 examples=0
 scenariosNotAllowed=0

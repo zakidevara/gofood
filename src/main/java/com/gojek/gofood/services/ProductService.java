@@ -46,7 +46,7 @@ public class ProductService {
 	
 	public List<String> getProductsNameOrderByRate(){
 		ArrayList<String> result = new ArrayList<String>();
-		Collections.sort(productsList, new RateComparator());
+		Collections.sort(productsList, Collections.reverseOrder(new RateComparator()));
 		for(Product e : productsList) {
 			result.add(e.getName());
 		}		

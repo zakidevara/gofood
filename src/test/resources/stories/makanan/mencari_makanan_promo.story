@@ -10,8 +10,6 @@ Given a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpic
 When these products are discounted in the same order: 20%, 0%, 40%
 Then I should be told about the products : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium
 
-
-
 Scenario: Sort products on sale from the closest distance to the furthest
 Given a list of products on sale : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium
 When the distances between the product and the customer in the same order are : 0.4, 1.9, 0.8 in kilometers

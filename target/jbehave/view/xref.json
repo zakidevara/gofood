@@ -1,5 +1,5 @@
 {"xref": {
-  "whenMade": 1574730686467,
+  "whenMade": 1574731965498,
   "createdBy": "JBehave",
   "metaFilter": "-skip -ignore",
   "meta": [],
@@ -12,9 +12,9 @@
       "html": "stories.makanan.mencari_makanan_promo.html",
       "meta": "",
       "scenarios": "Scenario:Find products on sale\u000aGiven a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen these products are discounted in the same order: 20%, 0%, 40%\u000aThen I should be told about the products : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium\u000a\u000a\u000aScenario:Sort products on sale from the closest distance to the furthest\u000aGiven a list of products on sale : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen the distances between the product and the customer in the same order are : 0.4, 1.9, 0.8 in kilometers\u000aThen I should be told about the products from the closest distance to the furthest : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu\u000a\u000a\u000aScenario:Sort products on sale with the same distance from the highest rate\u000aGiven a list of products on sale with the same distance : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen the rates of the products are : 4, 3.9, 4.5 in stars\u000aThen I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu\u000a\u000a\u000a",
-      "passed": false,
-      "started": 1574730683671,
-      "duration": 749
+      "passed": true,
+      "started": 1574731958374,
+      "duration": 712
     }
   ],
   "stepMatches": []

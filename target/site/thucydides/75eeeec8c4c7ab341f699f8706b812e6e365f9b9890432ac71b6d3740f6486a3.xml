@@ -1,16 +1,16 @@
-<acceptance-test-run title="Find products on sale" name="Find products on sale" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="266" timestamp="2019-11-26T08:11:23.764+07:00">
+<acceptance-test-run title="Find products on sale" name="Find products on sale" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="293" timestamp="2019-11-26T08:32:38.523+07:00">
   <user-story id="mencari_makanan_promo" name="Mencari makanan promo" path="stories/makanan/mencari_makanan_promo.story"/>
   <tags>
     <tag name="Makanan" type="capability"/>
     <tag name="Mencari makanan promo" type="story"/>
   </tags>
-  <test-step result="SUCCESS" duration="94">
+  <test-step result="SUCCESS" duration="64">
     <description>Given a list of products : {Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium}</description>
   </test-step>
-  <test-step result="SUCCESS" duration="0">
+  <test-step result="SUCCESS" duration="10">
     <description>When these products are discounted in the same order: {20%, 0%, 40%}</description>
   </test-step>
-  <test-step result="SUCCESS" duration="16">
+  <test-step result="SUCCESS" duration="30">
     <description>Then I should be told about the products : {Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium}</description>
   </test-step>
 </acceptance-test-run>
