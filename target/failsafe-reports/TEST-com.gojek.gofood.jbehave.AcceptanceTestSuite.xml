@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <testsuite tests="11" failures="0" name="com.gojek.gofood.jbehave.AcceptanceTestSuite" time="4.981" errors="0" skipped="0">
+=======
+<testsuite tests="15" failures="0" name="com.gojek.gofood.jbehave.AcceptanceTestSuite" time="9.372" errors="0" skipped="0">
+>>>>>>> rasya
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
@@ -65,6 +69,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
+<<<<<<< HEAD
   <testcase classname="java.lang.Object" name="BeforeStories" time="0.015"/>
   <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.001"/>
   <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="When these products are discounted in the same order: 20%\u002C 0%\u002C 40%" time="0.011"/>
@@ -76,4 +81,21 @@
   <testcase classname="Scenario: Find products with the closest distance" name="Scenario: Find products with the closest distance" time="0.01"/>
   <testcase classname="mencari_makanan_promo.story" name="mencari_makanan_promo.story" time="0.012"/>
   <testcase classname="java.lang.Object" name="AfterStories" time="1.457"/>
+=======
+  <testcase classname="java.lang.Object" name="BeforeStories" time="0.019"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.001"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="When these products are discounted in the same order: 20%\u002C 0%\u002C 40%" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Then I should be told about the products : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium" time="0.002"/>
+  <testcase classname="Scenario: Find products on sale" name="Scenario: Find products on sale" time="0.213"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Given a list of products on sale : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="When the distances between the product and the customer in the same order are : 0.4\u002C 1.9\u002C 0.8 in kilometers" time="0.005"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Then I should be told about the products from the closest distance to the furthest : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium\u002C Paket Geprek Bensu" time="0.004"/>
+  <testcase classname="Scenario: Sort products on sale from the closest distance to the furthest" name="Scenario: Sort products on sale from the closest distance to the furthest" time="0.026"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Given a list of products on sale with the same distance : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="When the rates of the products are : 4\u002C 3.9\u002C 4.5 in stars" time="0.001"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Then I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium\u002C Whopper Meal Medium\u002C Paket Geprek Bensu" time="0.002"/>
+  <testcase classname="Scenario: Sort products on sale with the same distance from the highest rate" name="Scenario: Sort products on sale with the same distance from the highest rate" time="0.013"/>
+  <testcase classname="mencari_makanan_promo.story" name="mencari_makanan_promo.story" time="0.014"/>
+  <testcase classname="java.lang.Object" name="AfterStories" time="5.602"/>
+>>>>>>> rasya
 </testsuite>

@@ -5,6 +5,7 @@ public class Product {
 	private float discount;
 	private float price;
 	private float distance;
+	private float rate;
 	
 	public Product(String name) {
 		this.name = name;
@@ -21,4 +22,6 @@ public class Product {
 	public void setDistance(float newDistance) { distance = newDistance;}
 	public float getPrice() {return price - (price*discount);}
 	public void setPrice(float newPrice) { price = newPrice;}
+	public float getRate() {return rate;}
+	public void setRate(float newRate) { rate = newRate;}
 }

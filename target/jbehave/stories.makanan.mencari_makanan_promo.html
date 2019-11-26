@@ -13,9 +13,15 @@
 <div class="step successful">Then I should be told about the products : <span class="step parameter">Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium</span></div>
 </div>
 <div class="scenario">
-<h2>Scenario: Find products with the closest distance</h2>
-<div class="step successful">Given a list of products : <span class="step parameter">Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</span></div>
+<h2>Scenario: Sort products on sale from the closest distance to the furthest</h2>
+<div class="step successful">Given a list of products on sale : <span class="step parameter">Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</span></div>
 <div class="step successful">When the distances between the product and the customer in the same order are : <span class="step parameter">0.4, 1.9, 0.8</span> in kilometers</div>
-<div class="step successful">Then I should be told about the products in order : <span class="step parameter">Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu</span></div>
+<div class="step successful">Then I should be told about the products from the closest distance to the furthest : <span class="step parameter">Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: Sort products on sale with the same distance from the highest rate</h2>
+<div class="step successful">Given a list of products on sale with the same distance : <span class="step parameter">Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</span></div>
+<div class="step successful">When the rates of the products are : <span class="step parameter">4, 3.9, 4.5</span> in stars</div>
+<div class="step successful">Then I should be told about the products in order from the highest rating to the lowest : <span class="step parameter">Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu</span></div>
 </div>
 </div>

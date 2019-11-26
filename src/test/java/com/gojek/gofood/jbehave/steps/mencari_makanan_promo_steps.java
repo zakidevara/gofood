@@ -13,6 +13,7 @@ public class mencari_makanan_promo_steps {
 	List<String> proposedProducts;
 	ProductService productService;
 	
+	//Scenario 1
 	@Given("a list of products : $givenProducts")
 	public void givenListOfProducts(List<String> givenProducts) {
 		products = new ArrayList<Product>();
@@ -37,14 +38,15 @@ public class mencari_makanan_promo_steps {
 		assertThat(proposedProducts).isEqualTo(productsWithPromo);
 	}
 	
-	
 	//Scenario 2
 	@Given("a list of products on sale : $givenProducts")
 	public void givenListOfProductsOnSale(List<String> givenProducts) {
 		products = new ArrayList<Product>();
 		for(String e : givenProducts) {
 			products.add(new Product(e));
-		}		
+
+		}
+		
 	}
 	
 	@When("the distances between the product and the customer in the same order are : $distances in kilometers")
@@ -58,8 +60,37 @@ public class mencari_makanan_promo_steps {
 		proposedProducts = productService.getProductsNameOrderByDistanceAsc();
 	}
 	
-	@Then("I should be told about the products in order : $expectedProducts")
+
+	@Then("I should be told about the products from the closest distance to the furthest : $expectedProducts")
 	public void thenShowProductsInOrderOfDistance(List<String> expectedProducts) {
+		assertThat(proposedProducts).isEqualTo(expectedProducts);
+	}
+	
+	
+	//Scenario 3
+	@Given("a list of products on sale with the same distance : $givenProducts")
+	public void givenListOfProductsOnSaleWithSameDistance(List<String> givenProducts) {
+		products = new ArrayList<Product>();
+		for(String e : givenProducts) {
+			products.add(new Product(e));
+		}
+		
+	}
+	
+	@When("the rates of the products are : $rates in stars")
+	
+	public void whenRatesAre(List<Float> rates) {
+		int i = 0; 
+		for(Product f : products) {
+			f.setRate(rates.get(i));
+			i++;
+		}
+		productService = new ProductService(products);
+		proposedProducts = productService.getProductsNameOrderByRate();
+	}
+	
+	@Then("I should be told about the products in order from the highest rating to the lowest : $expectedProducts")
+	public void thenShowProductsInOrderOfRates(List<String> expectedProducts) {
 		assertThat(proposedProducts).isEqualTo(expectedProducts);
 	}
 }

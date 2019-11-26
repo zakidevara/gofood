@@ -19,10 +19,15 @@
 <step outcome="successful">When these products are discounted in the same order: <parameter>20%, 0%, 40%</parameter></step>
 <step outcome="successful">Then I should be told about the products : <parameter>Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium</parameter></step>
 </scenario>
-<scenario keyword="Scenario:" title="Find products with the closest distance">
-<step outcome="successful">Given a list of products : <parameter>Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</parameter></step>
+<scenario keyword="Scenario:" title="Sort products on sale from the closest distance to the furthest">
+<step outcome="successful">Given a list of products on sale : <parameter>Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</parameter></step>
 <step outcome="successful">When the distances between the product and the customer in the same order are : <parameter>0.4, 1.9, 0.8</parameter> in kilometers</step>
-<step outcome="successful">Then I should be told about the products in order : <parameter>Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu</parameter></step>
+<step outcome="successful">Then I should be told about the products from the closest distance to the furthest : <parameter>Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="Sort products on sale with the same distance from the highest rate">
+<step outcome="successful">Given a list of products on sale with the same distance : <parameter>Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</parameter></step>
+<step outcome="successful">When the rates of the products are : <parameter>4, 3.9, 4.5</parameter> in stars</step>
+<step outcome="successful">Then I should be told about the products in order from the highest rating to the lowest : <parameter>Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu</parameter></step>
 </scenario>
 </story>
 
