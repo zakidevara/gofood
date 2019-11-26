@@ -31,8 +31,8 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 1],
-                ['Pending', 0],
+                ['Passing', 0],
+                ['Pending', 1],
                 ['Failing', 0],
                 ['Errors',  0]
             ]
@@ -60,10 +60,10 @@
                 marginTop:'15px'
             },
             series:[
-                {label:'100% requirements tested successfully' },
-                {label:'0% requirements untested'},
+                {label:'0% requirements tested successfully' },
+                {label:'100% requirements untested'},
                 {label:'0%} requirements failing'},
-                {label:'0%} requirements with errors'}
+                {label:'100%} requirements with errors'}
             ]
         });
         // Results table
@@ -135,10 +135,10 @@
         <li><a href="index.html" >Overall Test Results</a></li>
         <li><a href="capabilities.html" >Requirements</a></li>
         <li><a href="releases.html" >Releases</a></li>
-        <li><a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html" >Stories</a></li>
         <li><a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html" class="current">Capabilities</a></li>
+        <li><a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html" >Stories</a></li>
     </ul>
-    <span class="date-and-time">Report generated 25-11-2019 02:23</span>
+    <span class="date-and-time">Report generated 25-11-2019 17:40</span>
     <br style="clear:left"/>
 </div>
 
@@ -177,9 +177,9 @@
                 <tr>
                     <td class="summary-leading-column">Stories</td>
                     <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
                     <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
                     <td>0</td>
                 </tr>
                 </body>
@@ -209,12 +209,12 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>2</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0%</td>
             <td>2</td>
             <td>100%</td>
-            <td>0</td>
-            <td>0%</td>
-            <td>0</td>
-            <td>0%</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Manual</td>
@@ -229,12 +229,12 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>2</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0%</td>
             <td>2</td>
             <td>100%</td>
-            <td>0</td>
-            <td>0%</td>
-            <td>0</td>
-            <td>0%</td>
         </tr>
         </body>
     </table>
@@ -275,14 +275,14 @@
                     <tbody>
 
 
-                        <tr class="test-SUCCESS requirementRow">
+                        <tr class="test-PENDING requirementRow">
                             <td class="requirementRowCell">
-                                <img src="images/traffic-green.gif" class="summary-icon" title="SUCCESS"/>
-                                <span style="display:none">3</span>
+                                <img src="images/traffic-yellow.gif" class="summary-icon" title="PENDING"/>
+                                <span style="display:none">0</span>
                             </td>
                             <td class="cardNumber requirementRowCell"></td>
 
-                            <td class="SUCCESS-text requirementRowCell">
+                            <td class="PENDING-text requirementRowCell">
                                     <a href="javaScript:void(0)" class="read-more-link"><img src="images/plus.png" height="20" /></a>
                                 <span class="requirementName"><a href="8597fed58a36556abeae4f26526eeacc98bfc8db9ee5f627bd21614de4bb1444.html">Find out which products are on sale</a></span>
                                     <div class="requirementNarrative read-more-text">In order to get the best deals available<br>As a customer<br>I want to know which products are on sale<br></div>
@@ -291,8 +291,8 @@
 
 
                             <td class="greentext highlighted-value requirementRowCell">2</td>
-                            <td class="greentext requirementRowCell">2</td>
-                            <td class="bluetext requirementRowCell">0</td>
+                            <td class="greentext requirementRowCell">0</td>
+                            <td class="bluetext requirementRowCell">2</td>
                             <td class="redtext requirementRowCell">0</td>
                             <td class="lightorangetext requirementRowCell">0</td>
                                 <td class="greentext highlighted-value requirementRowCell">0</td>
@@ -318,64 +318,64 @@
 
                                 <table>
                                     <tr>
-                                        <td width="40px"><div class="small">100%</div></td>
+                                        <td width="40px"><div class="small">0%</div></td>
                                         <td width="125px">
                                             <div class="percentagebar"
                                                  title="Find out which products are on sale|
 Tests implemented: 2
-  - Passing tests: 2 (100% of specified requirements)
+  - Passing tests: 0 (0% of specified requirements)
   - Failing tests: 0 (0% of specified requirements)
   - Tests with errors: 0 (0% of specified requirements)
 
 Requirements specified:     1
 Requirements with no tests: 0
 
-Pending tests: 0
+Pending tests: 2
 Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 0%"
+Estimated unimplemented or pending requirements: 100%"
                                                  style="width: 125px;">
                                                 <div class="errorbar"
-                                                     style="width: 125px;"
+                                                     style="width: 0px;"
                                                      title="Find out which products are on sale|
 Tests implemented: 2
-  - Passing tests: 2 (100% of specified requirements)
+  - Passing tests: 0 (0% of specified requirements)
   - Failing tests: 0 (0% of specified requirements)
   - Tests with errors: 0 (0% of specified requirements)
 
 Requirements specified:     1
 Requirements with no tests: 0
 
-Pending tests: 0
+Pending tests: 2
 Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 0%">
+Estimated unimplemented or pending requirements: 100%">
                                                     <div class="failingbar"
-                                                         style="width: 125px;"
+                                                         style="width: 0px;"
                                                          title="Find out which products are on sale|
 Tests implemented: 2
-  - Passing tests: 2 (100% of specified requirements)
+  - Passing tests: 0 (0% of specified requirements)
   - Failing tests: 0 (0% of specified requirements)
   - Tests with errors: 0 (0% of specified requirements)
 
 Requirements specified:     1
 Requirements with no tests: 0
 
-Pending tests: 0
+Pending tests: 2
 Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 0%">
+Estimated unimplemented or pending requirements: 100%">
                                                         <div class="passingbar"
-                                                             style="width: 125px;"
+                                                             style="width: 0px;"
                                                              title="Find out which products are on sale|
 Tests implemented: 2
-  - Passing tests: 2 (100% of specified requirements)
+  - Passing tests: 0 (0% of specified requirements)
   - Failing tests: 0 (0% of specified requirements)
   - Tests with errors: 0 (0% of specified requirements)
 
 Requirements specified:     1
 Requirements with no tests: 0
 
-Pending tests: 0
+Pending tests: 2
 Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 0%">
+Estimated unimplemented or pending requirements: 100%">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -410,9 +410,9 @@ Estimated unimplemented or pending requirements: 0%">
                     <tbody>
 
 
-                        <tr class="test-SUCCESS">
-                            <td><img src="images/success.png" title="SUCCESS" class="summary-icon"/><span style="display:none">SUCCESS</span></td>
-                            <td class="SUCCESS-text"><a href="75eeeec8c4c7ab341f699f8706b812e6e365f9b9890432ac71b6d3740f6486a3.html">Find products on sale </a></td>
+                        <tr class="test-PENDING">
+                            <td><img src="images/pending.png" title="PENDING" class="summary-icon"/><span style="display:none">PENDING</span></td>
+                            <td class="PENDING-text"><a href="75eeeec8c4c7ab341f699f8706b812e6e365f9b9890432ac71b6d3740f6486a3.html">Find products on sale </a></td>
 
                             <td class="lightgreentext">3</td>
                             <td class="bluetext">
@@ -421,13 +421,13 @@ Estimated unimplemented or pending requirements: 0%">
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">0.11</td>
+                            <td class="lightgreentext">0.44</td>
                         </tr>
 
 
-                        <tr class="test-SUCCESS">
-                            <td><img src="images/success.png" title="SUCCESS" class="summary-icon"/><span style="display:none">SUCCESS</span></td>
-                            <td class="SUCCESS-text"><a href="6ab6a3dc242486613b8b07c04c1876f68d335c23dc41fe71718b1b56ef18402e.html">Find products with the closest distance </a></td>
+                        <tr class="test-PENDING">
+                            <td><img src="images/pending.png" title="PENDING" class="summary-icon"/><span style="display:none">PENDING</span></td>
+                            <td class="PENDING-text"><a href="6ab6a3dc242486613b8b07c04c1876f68d335c23dc41fe71718b1b56ef18402e.html">Find products with the closest distance </a></td>
 
                             <td class="lightgreentext">3</td>
                             <td class="bluetext">
@@ -436,7 +436,7 @@ Estimated unimplemented or pending requirements: 0%">
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">0.03</td>
+                            <td class="lightgreentext">0.02</td>
                         </tr>
                     </tbody>
                 </table>

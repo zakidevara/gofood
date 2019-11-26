@@ -18,5 +18,9 @@ When the distances between the product and the customer in the same order are : 
 Then I should be told about the products in order : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu
 
 
+Scenario: Find products with the highest rate
+Given a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium
+When the rates of the products are : 4, 3.9, 4.5 in stars
+Then I should be told about the products in order : Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu
 
 					 

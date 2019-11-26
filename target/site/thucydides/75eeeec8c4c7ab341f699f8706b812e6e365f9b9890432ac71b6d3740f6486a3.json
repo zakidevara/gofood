@@ -1,15 +1,15 @@
 {
   "title": "Find products on sale",
   "name": "Find products on sale",
-  "result": "SUCCESS",
+  "result": "PENDING",
   "steps": "3",
-  "successful": "3",
+  "successful": "0",
   "failures": "0",
   "skipped": "0",
   "ignored": "0",
-  "pending": "0",
-  "duration": "108",
-  "timestamp": "2019-11-25T02:23:16.482+07:00",
+  "pending": "3",
+  "duration": "438",
+  "timestamp": "2019-11-25T17:39:55.635+07:00",
   "user-story": {
     "qualifiedStoryClassName": "mencari_makanan_promo",
     "storyName": "Mencari makanan promo",
@@ -19,40 +19,40 @@
   "versions": [],
   "tags": [
     {
-      "name": "Mencari makanan promo",
-      "type": "story"
-    },
-    {
       "name": "Makanan",
       "type": "capability"
+    },
+    {
+      "name": "Mencari makanan promo",
+      "type": "story"
     }
   ],
   "test-steps": [
     {
       "number": 1,
-      "description": "Given a list of products : {Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium}",
-      "duration": 29,
-      "startTime": 1574623396544,
+      "description": "Given a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium",
+      "duration": 15,
+      "startTime": 1574678396042,
       "screenshots": [],
-      "result": "SUCCESS",
+      "result": "PENDING",
       "children": []
     },
     {
       "number": 2,
-      "description": "When these products are discounted in the same order: {20%, 0%, 40%}",
-      "duration": 3,
-      "startTime": 1574623396573,
+      "description": "When these products are discounted in the same order: 20%, 0%, 40%",
+      "duration": 0,
+      "startTime": 1574678396057,
       "screenshots": [],
-      "result": "SUCCESS",
+      "result": "PENDING",
       "children": []
     },
     {
       "number": 3,
-      "description": "Then I should be told about the products : {Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium}",
-      "duration": 12,
-      "startTime": 1574623396576,
+      "description": "Then I should be told about the products : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium",
+      "duration": 0,
+      "startTime": 1574678396057,
       "screenshots": [],
-      "result": "SUCCESS",
+      "result": "PENDING",
       "children": []
     }
   ]

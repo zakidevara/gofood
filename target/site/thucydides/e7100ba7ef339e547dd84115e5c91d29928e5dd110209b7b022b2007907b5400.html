@@ -31,9 +31,9 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
-                ['Pending', 0],
+                ['Pending', 1],
                 
                 ['Failing', 0],
                 
@@ -64,8 +64,8 @@
                 marginTop:'15px'
             },
             series:[
-                {label:'2 / 2 tests passed' },
-                {label:'0 / 2 tests pending or not executed'},
+                {label:'0 / 2 tests passed' },
+                {label:'2 / 2 tests pending or not executed'},
                 {label:'0 / 2 tests failed'},
                 {label:'0 / 2 errors'}
             ]
@@ -73,9 +73,9 @@
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
-                ['Pending', 0],
+                ['Pending', 1],
                 
                 ['Failing', 0],
                 
@@ -107,8 +107,8 @@
                 marginTop:'15px'
             },
         series:[
-                {label:'2 / 2 tests passed (1% of all test steps)' },
-                {label:'0 / 2 tests pending or not executed (0% of all test steps)'},
+                {label:'0 / 2 tests passed (0% of all test steps)' },
+                {label:'2 / 2 tests pending or not executed (1% of all test steps)'},
                 {label:'0 / 2 tests failed (0% of all test steps)'},
                 {label:'0 / 2 errors (0% of all test steps)'}
             ]
@@ -166,10 +166,10 @@
         <li><a href="index.html" class="current">Overall Test Results</a></li>
         <li><a href="capabilities.html" >Requirements</a></li>
         <li><a href="releases.html" >Releases</a></li>
-        <li><a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html" >Stories</a></li>
         <li><a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html" >Capabilities</a></li>
+        <li><a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html" >Stories</a></li>
     </ul>
-    <span class="date-and-time">Report generated 25-11-2019 02:23</span>
+    <span class="date-and-time">Report generated 25-11-2019 17:40</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -185,15 +185,15 @@
                             <span class="test-count-title">2 test scenarios :</span>
 
                             <span class="test-count">
-                                2
-                                    <a href="37a9989fbd7c808da877a6f3a45395752068deac0622451f3e5595e47fa62e47.html">passed</a>
-                                ,
+                                0
+passed,
                             </span>
 
 
                             <span class="test-count">
-                                0
-pending,
+                                2
+                                    <a href="7c3f5148c3b55d5c0c493879d121a820581f780d937000207242bb3eac773fc1.html">pending</a>
+                                ,
                             </span>
 
                             <span class="test-count">
@@ -250,12 +250,12 @@ errors
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>2</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0%</td>
             <td>2</td>
             <td>100%</td>
-            <td>0</td>
-            <td>0%</td>
-            <td>0</td>
-            <td>0%</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Manual</td>
@@ -270,12 +270,12 @@ errors
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>2</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0%</td>
             <td>2</td>
             <td>100%</td>
-            <td>0</td>
-            <td>0%</td>
-            <td>0</td>
-            <td>0%</td>
         </tr>
         </body>
     </table>
@@ -293,7 +293,7 @@ errors
   <!-- outcomesForType.withTag(tagName)-->
                 <tr>
                     <td class="bluetext" class="tag-title">
-                        <span class="SUCCESS-text">
+                        <span class="PENDING-text">
                                 <a href="d9f6adeea9fa0223fb10c47dd92276b9db3fcd97ff4623a8f2a439d1ea159252.html">Makanan</a>
                         </span>
                     </td>
@@ -302,21 +302,21 @@ errors
 
                         <table>
                             <tr>
-                                <td width="50px">100%</td>
+                                <td width="50px">0%</td>
                                 <td width="150px">
                                     <a href="d9f6adeea9fa0223fb10c47dd92276b9db3fcd97ff4623a8f2a439d1ea159252.html">
                                         <div class="percentagebar"
-                                             title="0 out of 2 test pending or not executed"
+                                             title="2 out of 2 test pending or not executed"
                                              style="width: 150px;">
                                             <div class="errorbar"
-                                                 style="width: 150px;"
+                                                 style="width: 0px;"
                                                  title="0 out of 2 test broken">
                                                 <div class="failingbar"
-                                                     style="width: 150px;"
+                                                     style="width: 0px;"
                                                      title="0 out of 2 test failing">
                                                     <div class="passingbar"
-                                                         style="width: 150px;"
-                                                         title="2 out of 2 test passing">
+                                                         style="width: 0px;"
+                                                         title="0 out of 2 test passing">
                                                     </div>
                                                 </div>
                                             </div>
@@ -370,12 +370,12 @@ errors
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>2</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0%</td>
             <td>2</td>
             <td>100%</td>
-            <td>0</td>
-            <td>0%</td>
-            <td>0</td>
-            <td>0%</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Manual</td>
@@ -390,12 +390,12 @@ errors
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>2</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>0</td>
+            <td>0%</td>
             <td>2</td>
             <td>100%</td>
-            <td>0</td>
-            <td>0%</td>
-            <td>0</td>
-            <td>0%</td>
         </tr>
         </body>
     </table>
@@ -413,7 +413,7 @@ errors
   <!-- outcomesForType.withTag(tagName)-->
                 <tr>
                     <td class="bluetext" class="tag-title">
-                        <span class="SUCCESS-text">
+                        <span class="PENDING-text">
                                 <a href="d9f6adeea9fa0223fb10c47dd92276b9db3fcd97ff4623a8f2a439d1ea159252.html">Makanan</a>
                         </span>
                     </td>
@@ -422,21 +422,21 @@ errors
 
                         <table>
                             <tr>
-                                <td width="50px">100%</td>
+                                <td width="50px">0%</td>
                                 <td width="150px">
                                     <a href="d9f6adeea9fa0223fb10c47dd92276b9db3fcd97ff4623a8f2a439d1ea159252.html">
                                         <div class="percentagebar"
-                                             title="0 out of 2 test pending or not executed"
+                                             title="2 out of 2 test pending or not executed"
                                              style="width: 150px;">
                                             <div class="errorbar"
-                                                 style="width: 150px;"
+                                                 style="width: 0px;"
                                                  title="0 out of 2 test broken">
                                                 <div class="failingbar"
-                                                     style="width: 150px;"
+                                                     style="width: 0px;"
                                                      title="0 out of 2 test failing">
                                                     <div class="passingbar"
-                                                         style="width: 150px;"
-                                                         title="2 out of 2 test passing">
+                                                         style="width: 0px;"
+                                                         title="0 out of 2 test passing">
                                                     </div>
                                                 </div>
                                             </div>
@@ -480,11 +480,11 @@ errors
 
 
 
-                                    <tr class="test-SUCCESS">
-                                        <td><img src="images/success.png" title="SUCCESS" class="summary-icon"/>
+                                    <tr class="test-PENDING">
+                                        <td><img src="images/pending.png" title="PENDING" class="summary-icon"/>
                                             
-                                            <span style="display:none">SUCCESS</span></td>
-                                        <td class="SUCCESS-text"><a href="75eeeec8c4c7ab341f699f8706b812e6e365f9b9890432ac71b6d3740f6486a3.html">Find products on sale </a></td>
+                                            <span style="display:none">PENDING</span></td>
+                                        <td class="PENDING-text"><a href="75eeeec8c4c7ab341f699f8706b812e6e365f9b9890432ac71b6d3740f6486a3.html">Find products on sale </a></td>
 
                                         <td class="lightgreentext">3</td>
 
@@ -495,17 +495,17 @@ errors
                                                  class="summary-icon"/>
                                             <span style="display:none">0</span>
                                         </td>
-                                        <td class="lightgreentext">0.11</td>
+                                        <td class="lightgreentext">0.44</td>
                                     </tr>
 
 
 
 
-                                    <tr class="test-SUCCESS">
-                                        <td><img src="images/success.png" title="SUCCESS" class="summary-icon"/>
+                                    <tr class="test-PENDING">
+                                        <td><img src="images/pending.png" title="PENDING" class="summary-icon"/>
                                             
-                                            <span style="display:none">SUCCESS</span></td>
-                                        <td class="SUCCESS-text"><a href="6ab6a3dc242486613b8b07c04c1876f68d335c23dc41fe71718b1b56ef18402e.html">Find products with the closest distance </a></td>
+                                            <span style="display:none">PENDING</span></td>
+                                        <td class="PENDING-text"><a href="6ab6a3dc242486613b8b07c04c1876f68d335c23dc41fe71718b1b56ef18402e.html">Find products with the closest distance </a></td>
 
                                         <td class="lightgreentext">3</td>
 
@@ -516,7 +516,7 @@ errors
                                                  class="summary-icon"/>
                                             <span style="display:none">0</span>
                                         </td>
-                                        <td class="lightgreentext">0.03</td>
+                                        <td class="lightgreentext">0.02</td>
                                     </tr>
                                     </tbody>
                                 </table>

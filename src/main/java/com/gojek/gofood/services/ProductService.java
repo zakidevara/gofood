@@ -14,6 +14,12 @@ public class ProductService {
 		}
 	}
 	
+	private class RateComparator implements Comparator<Product>{
+		public int compare(Product product1, Product product2) {
+			return ((Float) (product1.getRate())).compareTo( (Float)product2.getRate());
+		}
+	}
+	
 	public ProductService(List<Product> pl) {
 		productsList = pl;
 	}
@@ -31,6 +37,16 @@ public class ProductService {
 	public List<String> getProductsNameOrderByDistanceAsc(){
 		ArrayList<String> result = new ArrayList<String>();
 		Collections.sort(productsList, new DistanceComparator());
+		for(Product e : productsList) {
+			result.add(e.getName());
+		}		
+		
+		return result;
+	}
+	
+	public List<String> getProductsNameOrderByRate(){
+		ArrayList<String> result = new ArrayList<String>();
+		Collections.sort(productsList, new RateComparator());
 		for(Product e : productsList) {
 			result.add(e.getName());
 		}		

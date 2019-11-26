@@ -55,4 +55,22 @@ public class mencari_makanan_promo_steps {
 	public void thenShowProductsInOrderOfDistance(List<String> expectedProducts) {
 		assertThat(proposedProducts).isEqualTo(expectedProducts);
 	}
+	
+	@When("the rates of the products are : $rates in stars")
+	
+	public void whenRatesAre(List<Float> rates) {
+		int i = 0; 
+		for(Product f : products) {
+			f.setRate(rates.get(i));
+			i++;
+		}
+		productService = new ProductService(products);
+		proposedProducts = productService.getProductsNameOrderByRate();
+	}
+	
+	@Then("I should be told about the products in order : $expectedProducts")
+
+	public void thenShowProductsInOrderOfRates(List<String> expectedProducts) {
+		assertThat(proposedProducts).isEqualTo(expectedProducts);
+	}
 }
