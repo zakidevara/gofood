@@ -1,15 +1,15 @@
 {
   "title": "Find products on sale",
   "name": "Find products on sale",
-  "result": "PENDING",
+  "result": "SUCCESS",
   "steps": "3",
-  "successful": "0",
+  "successful": "3",
   "failures": "0",
   "skipped": "0",
   "ignored": "0",
-  "pending": "3",
-  "duration": "438",
-  "timestamp": "2019-11-25T17:39:55.635+07:00",
+  "pending": "0",
+  "duration": "266",
+  "timestamp": "2019-11-26T08:11:23.764+07:00",
   "user-story": {
     "qualifiedStoryClassName": "mencari_makanan_promo",
     "storyName": "Mencari makanan promo",
@@ -30,29 +30,29 @@
   "test-steps": [
     {
       "number": 1,
-      "description": "Given a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium",
-      "duration": 15,
-      "startTime": 1574678396042,
+      "description": "Given a list of products : {Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium}",
+      "duration": 94,
+      "startTime": 1574730683905,
       "screenshots": [],
-      "result": "PENDING",
+      "result": "SUCCESS",
       "children": []
     },
     {
       "number": 2,
-      "description": "When these products are discounted in the same order: 20%, 0%, 40%",
+      "description": "When these products are discounted in the same order: {20%, 0%, 40%}",
       "duration": 0,
-      "startTime": 1574678396057,
+      "startTime": 1574730684014,
       "screenshots": [],
-      "result": "PENDING",
+      "result": "SUCCESS",
       "children": []
     },
     {
       "number": 3,
-      "description": "Then I should be told about the products : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium",
-      "duration": 0,
-      "startTime": 1574678396057,
+      "description": "Then I should be told about the products : {Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium}",
+      "duration": 16,
+      "startTime": 1574730684014,
       "screenshots": [],
-      "result": "PENDING",
+      "result": "SUCCESS",
       "children": []
     }
   ]

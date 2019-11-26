@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="com.gojek.gofood.jbehave.AcceptanceTestSuite" time="4.549" errors="0" skipped="6">
+<testsuite tests="13" failures="1" name="com.gojek.gofood.jbehave.AcceptanceTestSuite" time="4.854" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
     <property name="java.vm.version" value="25.231-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Rasya\Documents\Semester 3\Pemrograman Berorientasi Objek\praktek\gofood\gofood"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\gofood\gofood"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="ID"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Rasya\Documents\Semester 3\Pemrograman Berorientasi Objek\praktek\gofood\gofood"/>
+    <property name="user.dir" value="E:\gofood\gofood"/>
     <property name="java.runtime.version" value="1.8.0_231-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\Rasya\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\asus\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -29,19 +29,19 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.2\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_231/bin/server;C:/Program Files/Java/jre1.8.0_231/bin;C:/Program Files/Java/jre1.8.0_231/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;D:\app\Rasya\product\11.2.0\dbhome_1\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.6.2\bin;C:\Users\Rasya\AppData\Local\Microsoft\WindowsApps;;C:\Users\Rasya\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;F:\app\asus\product\11.2.0\dbhome_2\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.2\bin\;C:\php;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\PuTTY\;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;C:\Users\asus\AppData\Local\Programs\Microsoft VS Code\bin;;."/>
     <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.2\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
     <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.6.2\bin\..\lib\jansi-native"/>
-    <property name="user.home" value="C:\Users\Rasya"/>
+    <property name="user.home" value="C:\Users\asus"/>
     <property name="user.timezone" value="Asia/Bangkok"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="Rasya"/>
+    <property name="user.name" value="asus"/>
     <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.2\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
@@ -54,38 +54,62 @@
     <property name="java.version" value="1.8.0_231"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes"/>
-    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="C:\Program Files\apache-maven-3.6.2\bin\.."/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="java.lang.Object" name="BeforeStories" time="0.047"/>
-  <testcase classname="[PENDING] Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" name="[PENDING] Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.312">
-    <skipped/>
+  <testcase classname="java.lang.Object" name="BeforeStories" time="0.015"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="When these products are discounted in the same order: 20%\u002C 0%\u002C 40%" time="0.016"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Then I should be told about the products : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium" time="0"/>
+  <testcase classname="Scenario: Find products on sale" name="Scenario: Find products on sale" time="0.281"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Given a list of products on sale : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="When the distances between the product and the customer in the same order are : 0.4\u002C 1.9\u002C 0.8 in kilometers" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Then I should be told about the products from the closest distance to the furthest : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium\u002C Paket Geprek Bensu" time="0"/>
+  <testcase classname="Scenario: Sort products on sale from the closest distance to the furthest" name="Scenario: Sort products on sale from the closest distance to the furthest" time="0.016"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Given a list of products on sale with the same distance : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="When the rates of the products are : 4\u002C 3.9\u002C 4.5 in stars" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps" name="Then I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium\u002C Whopper Meal Medium\u002C Paket Geprek Bensu" time="0">
+    <failure message="expected:&lt;[&apos;Paket [McSpicy Smokey BBQ Medium&apos;, &apos;Whopper Meal Medium&apos;, &apos;Paket Geprek Bensu]&apos;]&gt; but was:&lt;[&apos;Paket [Geprek Bensu&apos;, &apos;Whopper Meal Medium&apos;, &apos;Paket McSpicy Smokey BBQ Medium]&apos;]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[&apos;Paket [McSpicy Smokey BBQ Medium&apos;, &apos;Whopper Meal Medium&apos;, &apos;Paket Geprek Bensu]&apos;]&gt; but was:&lt;[&apos;Paket [Geprek Bensu&apos;, &apos;Whopper Meal Medium&apos;, &apos;Paket McSpicy Smokey BBQ Medium]&apos;]&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.fest.assertions.ConstructorInvoker.newInstance(ConstructorInvoker.java:36)
+	at org.fest.assertions.ComparisonFailureFactory.newComparisonFailure(ComparisonFailureFactory.java:60)
+	at org.fest.assertions.ComparisonFailureFactory.comparisonFailure(ComparisonFailureFactory.java:46)
+	at org.fest.assertions.Fail.comparisonFailed(Fail.java:83)
+	at org.fest.assertions.Fail.failIfNotEqual(Fail.java:71)
+	at org.fest.assertions.GenericAssert.isEqualTo(GenericAssert.java:217)
+	at com.gojek.gofood.jbehave.steps.mencari_makanan_promo_steps.thenShowProductsInOrderOfRates(mencari_makanan_promo_steps.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jbehave.core.steps.StepCreator$ParameterisedStep.perform(StepCreator.java:550)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:499)
+	at org.jbehave.core.embedder.StoryRunner.runStepsWhileKeepingState(StoryRunner.java:479)
+	at org.jbehave.core.embedder.StoryRunner.runScenarioSteps(StoryRunner.java:443)
+	at org.jbehave.core.embedder.StoryRunner.runCancellable(StoryRunner.java:305)
+	at org.jbehave.core.embedder.StoryRunner.run(StoryRunner.java:219)
+	at org.jbehave.core.embedder.StoryRunner.run(StoryRunner.java:180)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:229)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+    <system-out>Then I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu (FAILED)
+(org.junit.ComparisonFailure: expected:&lt;[&apos;Paket [McSpicy Smokey BBQ Medium&apos;, &apos;Whopper Meal Medium&apos;, &apos;Paket Geprek Bensu]&apos;]&gt; but was:&lt;[&apos;Paket [Geprek Bensu&apos;, &apos;Whopper Meal Medium&apos;, &apos;Paket McSpicy Smokey BBQ Medium]&apos;]&gt;)
+</system-out>
   </testcase>
-  <testcase classname="[PENDING] When these products are discounted in the same order: 20%\u002C 0%\u002C 40%" name="[PENDING] When these products are discounted in the same order: 20%\u002C 0%\u002C 40%" time="0.312">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] Then I should be told about the products : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium" name="[PENDING] Then I should be told about the products : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium" time="0.312">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Find products on sale" name="Scenario: Find products on sale" time="0.562"/>
-  <testcase classname="[PENDING] Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium\u200B" name="[PENDING] Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium\u200B" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] When the distances between the product and the customer in the same order are : 0.4\u002C 1.9\u002C 0.8 in kilometers" name="[PENDING] When the distances between the product and the customer in the same order are : 0.4\u002C 1.9\u002C 0.8 in kilometers" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] Then I should be told about the products in order : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium\u002C Paket Geprek Bensu" name="[PENDING] Then I should be told about the products in order : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium\u002C Paket Geprek Bensu" time="0.037">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Find products with the closest distance" name="Scenario: Find products with the closest distance" time="0.039"/>
-  <testcase classname="mencari_makanan_promo.story" name="mencari_makanan_promo.story" time="0.039"/>
-  <testcase classname="java.lang.Object" name="AfterStories" time="1.553"/>
+  <testcase classname="java.lang.Object" name="AfterStories" time="1.453"/>
 </testsuite>

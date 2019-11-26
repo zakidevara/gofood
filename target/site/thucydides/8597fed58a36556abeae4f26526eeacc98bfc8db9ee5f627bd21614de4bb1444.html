@@ -31,9 +31,9 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 0],
-                ['Pending', 1],
-                ['Failing', 0],
+                ['Passing', 0.5],
+                ['Pending', 0.25],
+                ['Failing', 0.25],
                 ['Errors',  0]
             ]
         ], {
@@ -60,10 +60,10 @@
                 marginTop:'15px'
             },
             series:[
-                {label:'0% requirements tested successfully' },
-                {label:'100% requirements untested'},
-                {label:'0%} requirements failing'},
-                {label:'100%} requirements with errors'}
+                {label:'50% requirements tested successfully' },
+                {label:'25% requirements untested'},
+                {label:'25%} requirements failing'},
+                {label:'25%} requirements with errors'}
             ]
         });
         // Results table
@@ -138,7 +138,7 @@
         <li><a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html" >Capabilities</a></li>
         <li><a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html" class="current">Stories</a></li>
     </ul>
-    <span class="date-and-time">Report generated 25-11-2019 17:40</span>
+    <span class="date-and-time">Report generated 26-11-2019 08:11</span>
     <br style="clear:left"/>
 </div>
 
@@ -200,13 +200,13 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
+            <td>4</td>
             <td>2</td>
-            <td>0</td>
-            <td>0%</td>
-            <td>0</td>
-            <td>0%</td>
-            <td>2</td>
-            <td>100%</td>
+            <td>50%</td>
+            <td>1</td>
+            <td>25%</td>
+            <td>1</td>
+            <td>25%</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Manual</td>
@@ -220,13 +220,13 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
+            <td>4</td>
             <td>2</td>
-            <td>0</td>
-            <td>0%</td>
-            <td>0</td>
-            <td>0%</td>
-            <td>2</td>
-            <td>100%</td>
+            <td>50%</td>
+            <td>1</td>
+            <td>25%</td>
+            <td>1</td>
+            <td>25%</td>
         </tr>
         </body>
     </table>
@@ -239,7 +239,7 @@
 
     <div id="test-tabs">
         <ul>
-            <li><a href="#test-tabs-1">Acceptance Tests (2)</a></li>
+            <li><a href="#test-tabs-1">Acceptance Tests (4)</a></li>
         </ul>
         <div id="test_list_tests" class="table">
             <div class="test-results">
@@ -256,9 +256,9 @@
                     <tbody>
 
 
-                        <tr class="test-PENDING">
-                            <td><img src="images/pending.png" title="PENDING" class="summary-icon"/><span style="display:none">PENDING</span></td>
-                            <td class="PENDING-text"><a href="75eeeec8c4c7ab341f699f8706b812e6e365f9b9890432ac71b6d3740f6486a3.html">Find products on sale </a></td>
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS" class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a href="75eeeec8c4c7ab341f699f8706b812e6e365f9b9890432ac71b6d3740f6486a3.html">Find products on sale </a></td>
 
                             <td class="lightgreentext">3</td>
                             <td class="bluetext">
@@ -267,7 +267,7 @@
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">0.44</td>
+                            <td class="lightgreentext">0.27</td>
                         </tr>
 
 
@@ -283,6 +283,36 @@
                                 <span style="display:none">0</span>
                             </td>
                             <td class="lightgreentext">0.02</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS" class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a href="a93ef87eb149d3b0db06f843f5939609af44940f3793545f78918d4300245fd2.html">Sort products on sale from the closest distance to the furthest </a></td>
+
+                            <td class="lightgreentext">3</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">0.03</td>
+                        </tr>
+
+
+                        <tr class="test-FAILURE">
+                            <td><img src="images/fail.png" title="FAILURE" class="summary-icon"/><span style="display:none">FAILURE</span></td>
+                            <td class="FAILURE-text"><a href="5f0d51eabf0d837e0573f89f2779416a02380b9cf48962e83b4e7b4c01997c17.html">Sort products on sale with the same distance from the highest rate </a></td>
+
+                            <td class="lightgreentext">3</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">0.09</td>
                         </tr>
                     </tbody>
                 </table>

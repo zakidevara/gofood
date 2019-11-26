@@ -1,3 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Mencari makanan promo","Find products on sale","PENDING","2019-11-25T17:39:55.635+07:00","0.0","0.44"
+"Mencari makanan promo","Find products on sale","SUCCESS","2019-11-26T08:11:23.764+07:00","0.0","0.27"
 "Mencari makanan promo","Find products with the closest distance","PENDING","2019-11-25T17:39:56.307+07:00","0.0","0.02"
+"Mencari makanan promo","Sort products on sale from the closest distance to the furthest","SUCCESS","2019-11-26T08:11:24.280+07:00","0.0","0.03"
+"Mencari makanan promo","Sort products on sale with the same distance from the highest rate","FAILURE","2019-11-26T08:11:24.311+07:00","0.0","0.09"
