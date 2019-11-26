@@ -18,8 +18,7 @@ public class mencari_makanan_promo_steps {
 		products = new ArrayList<Product>();
 		for(String e : givenProducts) {
 			products.add(new Product(e));
-		}
-		
+		}		
 	}
 	
 	@When("these products are discounted in the same order: $discounts")
@@ -38,8 +37,17 @@ public class mencari_makanan_promo_steps {
 		assertThat(proposedProducts).isEqualTo(productsWithPromo);
 	}
 	
+	
+	//Scenario 2
+	@Given("a list of products on sale : $givenProducts")
+	public void givenListOfProductsOnSale(List<String> givenProducts) {
+		products = new ArrayList<Product>();
+		for(String e : givenProducts) {
+			products.add(new Product(e));
+		}		
+	}
+	
 	@When("the distances between the product and the customer in the same order are : $distances in kilometers")
-
 	public void whenDistancesAre(List<Float> distances) {
 		int i = 0;
 		for(Product e : products) {
@@ -51,7 +59,6 @@ public class mencari_makanan_promo_steps {
 	}
 	
 	@Then("I should be told about the products in order : $expectedProducts")
-
 	public void thenShowProductsInOrderOfDistance(List<String> expectedProducts) {
 		assertThat(proposedProducts).isEqualTo(expectedProducts);
 	}

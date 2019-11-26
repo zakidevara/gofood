@@ -1,5 +1,5 @@
 {"xref": {
-  "whenMade": 1574623398074,
+  "whenMade": 1574727903470,
   "createdBy": "JBehave",
   "metaFilter": "-skip -ignore",
   "meta": [],
@@ -13,8 +13,8 @@
       "meta": "",
       "scenarios": "Scenario:Find products on sale\u000aGiven a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen these products are discounted in the same order: 20%, 0%, 40%\u000aThen I should be told about the products : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium\u000a\u000a\u000aScenario:Find products with the closest distance\u000aGiven a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen the distances between the product and the customer in the same order are : 0.4, 1.9, 0.8 in kilometers\u000aThen I should be told about the products in order : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu\u000a\u000a\u000a",
       "passed": true,
-      "started": 1574623396419,
-      "duration": 365
+      "started": 1574727900764,
+      "duration": 731
     }
   ],
   "stepMatches": []

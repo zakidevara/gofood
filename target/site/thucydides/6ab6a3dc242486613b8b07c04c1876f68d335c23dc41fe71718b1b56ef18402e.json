@@ -8,8 +8,8 @@
   "skipped": "0",
   "ignored": "0",
   "pending": "0",
-  "duration": "28",
-  "timestamp": "2019-11-25T02:23:16.753+07:00",
+  "duration": "35",
+  "timestamp": "2019-11-26T07:25:01.459+07:00",
   "user-story": {
     "qualifiedStoryClassName": "mencari_makanan_promo",
     "storyName": "Mencari makanan promo",
@@ -19,20 +19,20 @@
   "versions": [],
   "tags": [
     {
-      "name": "Mencari makanan promo",
-      "type": "story"
-    },
-    {
       "name": "Makanan",
       "type": "capability"
+    },
+    {
+      "name": "Mencari makanan promo",
+      "type": "story"
     }
   ],
   "test-steps": [
     {
       "number": 1,
       "description": "Given a list of products : {Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium}",
-      "duration": 5,
-      "startTime": 1574623396762,
+      "duration": 6,
+      "startTime": 1574727901473,
       "screenshots": [],
       "result": "SUCCESS",
       "children": []
@@ -41,7 +41,7 @@
       "number": 2,
       "description": "When the distances between the product and the customer in the same order are : {0.4, 1.9, 0.8} in kilometers",
       "duration": 7,
-      "startTime": 1574623396767,
+      "startTime": 1574727901481,
       "screenshots": [],
       "result": "SUCCESS",
       "children": []
@@ -49,8 +49,8 @@
     {
       "number": 3,
       "description": "Then I should be told about the products in order : {Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu}",
-      "duration": 4,
-      "startTime": 1574623396774,
+      "duration": 3,
+      "startTime": 1574727901490,
       "screenshots": [],
       "result": "SUCCESS",
       "children": []

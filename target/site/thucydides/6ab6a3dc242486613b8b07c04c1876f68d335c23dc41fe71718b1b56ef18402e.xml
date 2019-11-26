@@ -1,16 +1,16 @@
-<acceptance-test-run title="Find products with the closest distance" name="Find products with the closest distance" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="28" timestamp="2019-11-25T02:23:16.753+07:00">
+<acceptance-test-run title="Find products with the closest distance" name="Find products with the closest distance" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="35" timestamp="2019-11-26T07:25:01.459+07:00">
   <user-story id="mencari_makanan_promo" name="Mencari makanan promo" path="stories/makanan/mencari_makanan_promo.story"/>
   <tags>
     <tag name="Makanan" type="capability"/>
     <tag name="Mencari makanan promo" type="story"/>
   </tags>
-  <test-step result="SUCCESS" duration="5">
+  <test-step result="SUCCESS" duration="6">
     <description>Given a list of products : {Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium}</description>
   </test-step>
   <test-step result="SUCCESS" duration="7">
     <description>When the distances between the product and the customer in the same order are : {0.4, 1.9, 0.8} in kilometers</description>
   </test-step>
-  <test-step result="SUCCESS" duration="4">
+  <test-step result="SUCCESS" duration="3">
     <description>Then I should be told about the products in order : {Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu}</description>
   </test-step>
 </acceptance-test-run>
