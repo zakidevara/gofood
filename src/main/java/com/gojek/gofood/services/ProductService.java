@@ -53,6 +53,14 @@ public class ProductService {
 		
 		return result;
 	}
+	
+	public Product find(String productName) {
+		for(Product p : productsList) {
+			if(p.getName().equals(productName))
+				return p;
+		}
+		return null;
+	}
 
 	
 }

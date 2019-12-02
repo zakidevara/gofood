@@ -34,7 +34,7 @@ public class add_products_to_cart_steps {
 		}		
 	}
 	
-	@When("I add $quantity $productName to the cart")
+	@When("I add $quantity of $productName to the cart")
 	public void whenAddingProductToCart(int quantity, String productName) {
 		Product addedProduct;
 		productService = new ProductService(products);
@@ -43,11 +43,12 @@ public class add_products_to_cart_steps {
 		cart.add(item);
 	}
 	
-	@Then("there should be $expectedQty $expectedProductName inside the cart")
+	@Then("there should be $expectedQty of $expectedProductName inside the cart")
 	public void thenThereShouldBeAddedProductInsideTheCart(int expectedQty, String expectedProductName) {
 		CartItem addedItem = cart.find(expectedProductName);
-		CartItem expectedItem = new CartItem(products.find(expectedProductName), expectedQty);
-		assertThat(addedItem).isEqualTo(expectedItem);
+		CartItem expectedItem = new CartItem(productService.find(expectedProductName), expectedQty);
+		assertThat(addedItem.getName()).isEqualTo(expectedItem.getName());
+		assertThat(addedItem.getQuantity()).isEqualTo(expectedItem.getQuantity());
 	}
 	
 }

@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1575322476631</whenMade>
+  <whenMade>1575327037177</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-skip -ignore</metaFilter>
   <meta/>
@@ -34,8 +34,8 @@ Then I should be told about the products in order from the highest rating to the
 
 </scenarios>
       <passed>true</passed>
-      <started>1575322472209</started>
-      <duration>486</duration>
+      <started>1575327035122</started>
+      <duration>497</duration>
     </story>
     <story>
       <description>Adding products to the shopping cart</description>
@@ -49,16 +49,16 @@ I want to store selected products to a shopping cart
       <meta></meta>
       <scenarios>Scenario:Adding a product to an empty cart
 Given an empty cart
-And a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium
+And a list of products name : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium
 And the product&apos;s merchants in the same order are : Burger King, Geprek Bensu, McDonald&apos;s
-When I add 2 Whopper Meal Medium to the cart
-Then there should be 2 Whopper Meal Medium inside the cart
+When I add 2 of Whopper Meal Medium to the cart
+Then there should be 2 of Whopper Meal Medium inside the cart
 
 
 </scenarios>
       <passed>true</passed>
-      <started>1575322472719</started>
-      <duration>49</duration>
+      <started>1575327035633</started>
+      <duration>52</duration>
     </story>
   </stories>
   <stepMatches/>
