@@ -16,7 +16,7 @@ public class ProductService {
 	
 	private class RateComparator implements Comparator<Product>{
 		public int compare(Product product1, Product product2) {
-			return ((Float) (product1.getRate())).compareTo( (Float)product2.getRate());
+			return ((Float) (product1.getRating())).compareTo( (Float)product2.getRating());
 		}
 	}
 	

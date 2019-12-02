@@ -42,9 +42,10 @@ public class mencari_makanan_promo_steps {
 	@Given("a list of products on sale : $givenProducts")
 	public void givenListOfProductsOnSale(List<String> givenProducts) {
 		products = new ArrayList<Product>();
+		int count = 1;
 		for(String e : givenProducts) {
-			products.add(new Product(e));
-
+			products.add(new Product(e, new Merchant("Merchant " + count)));
+			count++;
 		}
 		
 	}
@@ -53,7 +54,7 @@ public class mencari_makanan_promo_steps {
 	public void whenDistancesAre(List<Float> distances) {
 		int i = 0;
 		for(Product e : products) {
-			e.setDistance(distances.get(i));
+			e.getMerchant().setDistanceFromCustomer(distances.get(i));
 			i++;
 		}
 		productService = new ProductService(products);
@@ -71,18 +72,19 @@ public class mencari_makanan_promo_steps {
 	@Given("a list of products on sale with the same distance : $givenProducts")
 	public void givenListOfProductsOnSaleWithSameDistance(List<String> givenProducts) {
 		products = new ArrayList<Product>();
+		int count = 1;
+		float sameDistance = 1.0f;
 		for(String e : givenProducts) {
-			products.add(new Product(e));
-		}
-		
+			products.add(new Product(e, new Merchant("Merchant " + count, sameDistance)));
+			count++;
+		}	
 	}
 	
-	@When("the rates of the products are : $rates in stars")
-	
+	@When("the rates of the products are : $rates in stars")	
 	public void whenRatesAre(List<Float> rates) {
 		int i = 0; 
 		for(Product f : products) {
-			f.setRate(rates.get(i));
+			f.getMerchant().setRating(rates.get(i));
 			i++;
 		}
 		productService = new ProductService(products);

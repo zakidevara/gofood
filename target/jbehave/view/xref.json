@@ -1,9 +1,5 @@
 {"xref": {
-<<<<<<< HEAD
-  "whenMade": 1574727903470,
-=======
-  "whenMade": 1574731965498,
->>>>>>> rasya
+  "whenMade": 1575322476631,
   "createdBy": "JBehave",
   "metaFilter": "-skip -ignore",
   "meta": [],
@@ -17,13 +13,20 @@
       "meta": "",
       "scenarios": "Scenario:Find products on sale\u000aGiven a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen these products are discounted in the same order: 20%, 0%, 40%\u000aThen I should be told about the products : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium\u000a\u000a\u000aScenario:Sort products on sale from the closest distance to the furthest\u000aGiven a list of products on sale : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen the distances between the product and the customer in the same order are : 0.4, 1.9, 0.8 in kilometers\u000aThen I should be told about the products from the closest distance to the furthest : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu\u000a\u000a\u000aScenario:Sort products on sale with the same distance from the highest rate\u000aGiven a list of products on sale with the same distance : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen the rates of the products are : 4, 3.9, 4.5 in stars\u000aThen I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu\u000a\u000a\u000a",
       "passed": true,
-<<<<<<< HEAD
-      "started": 1574727900764,
-      "duration": 731
-=======
-      "started": 1574731958374,
-      "duration": 712
->>>>>>> rasya
+      "started": 1575322472209,
+      "duration": 486
+    },
+    {
+      "description": "Adding products to the shopping cart",
+      "narrative": "In order to order multiple products at once\u000aAs a customer\u000aI want to store selected products to a shopping cart\u000a",
+      "name": "add_products_to_cart.story",
+      "path": "stories/pemesanan/add_products_to_cart.story",
+      "html": "stories.pemesanan.add_products_to_cart.html",
+      "meta": "",
+      "scenarios": "Scenario:Adding a product to an empty cart\u000aGiven an empty cart\u000aAnd a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aAnd the product's merchants in the same order are : Burger King, Geprek Bensu, McDonald's\u000aWhen I add 2 Whopper Meal Medium to the cart\u000aThen there should be 2 Whopper Meal Medium inside the cart\u000a\u000a\u000a",
+      "passed": true,
+      "started": 1575322472719,
+      "duration": 49
     }
   ],
   "stepMatches": []

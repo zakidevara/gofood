@@ -4,24 +4,54 @@ public class Product {
 	private String name;
 	private float discount;
 	private float price;
-	private float distance;
-	private float rate;
+	private Merchant merchant;
 	
-	public Product(String name) {
+	//Constructors
+	public Product(String name, float discount, float price, Merchant merchant) {
 		this.name = name;
-		discount = 0;
-		price = 0;
-		distance = 0;
+		this.discount = discount;
+		this.price = price;
+		this.merchant = merchant;
 	}
 	
-	public String getName() {return name;}
-	public void setName(String newName) { name = newName;}
-	public float getDiscount() {return discount;}
-	public void setDiscount(float newDiscount) { discount = newDiscount;}
-	public float getDistance() {return distance;}
-	public void setDistance(float newDistance) { distance = newDistance;}
-	public float getPrice() {return price - (price*discount);}
-	public void setPrice(float newPrice) { price = newPrice;}
-	public float getRate() {return rate;}
-	public void setRate(float newRate) { rate = newRate;}
+	public Product(String name) {
+		this(name, 0, 0, null);
+	}
+	
+	public Product(String name, Merchant m) {
+		this(name, 0, 0, m);
+		merchant.addProduct(this);
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String newName) { 
+		name = newName;
+	}
+	public float getDiscount() {
+		return discount;
+	}
+	public void setDiscount(float newDiscount) { 
+		discount = newDiscount;
+	}
+	
+	public float getPrice() {
+		return price - (price*discount);
+	}
+	public void setPrice(float newPrice) { 
+		price = newPrice;
+	}
+	public Merchant getMerchant() {
+		return merchant;
+	}
+	public void setMerchant(Merchant m) {
+		merchant = m;
+	}
+	public float getDistance() {
+		return merchant != null ? merchant.getDistanceFromCustomer() : null;
+	}
+	public float getRating() {
+		return merchant != null ? merchant.getRating() : null;
+	}
 }
