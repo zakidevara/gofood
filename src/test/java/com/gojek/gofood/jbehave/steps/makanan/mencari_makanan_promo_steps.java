@@ -1,4 +1,4 @@
-package com.gojek.gofood.jbehave.steps;
+package com.gojek.gofood.jbehave.steps.makanan;
 
 import java.util.ArrayList;
 import java.util.List;
