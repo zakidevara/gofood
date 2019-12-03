@@ -20,3 +20,7 @@ Given a list of products on sale with the same distance : Whopper Meal Medium, P
 When the rates of the products are : 4, 3.9, 4.5 in stars
 Then I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu
  
+Scenario: Sort products on sale by category if distance and rating are the same
+Given a list of products on sale with the same distance and rating : Bubble Gum Fizz, Big Mac, Fanta McFloat
+When the category of products are : Drink, Food, Drink
+Then I should be told about the products in order from foods to drinks : Big Mac, Bubble Gum Fizz, Fanta McFloat

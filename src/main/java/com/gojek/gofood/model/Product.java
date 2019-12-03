@@ -6,6 +6,7 @@ public class Product {
 	private float price;
 	private float distance;
 	private float rate;
+	private String category;
 	
 	public Product(String name) {
 		this.name = name;
@@ -24,4 +25,7 @@ public class Product {
 	public void setPrice(float newPrice) { price = newPrice;}
 	public float getRate() {return rate;}
 	public void setRate(float newRate) { rate = newRate;}
+	public String getCategory() {return category;}
+	public void setCategory(String newCategory) {category = newCategory;}
+
 }

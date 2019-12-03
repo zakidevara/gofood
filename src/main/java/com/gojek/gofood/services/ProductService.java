@@ -20,6 +20,12 @@ public class ProductService {
 		}
 	}
 	
+	private class CategoryComparator implements Comparator<Product>{
+		public int compare(Product product1, Product product2) {
+			return((String) (product1.getCategory())).compareTo( (String)product2.getCategory());
+		}
+	}
+	
 	public ProductService(List<Product> pl) {
 		productsList = pl;
 	}
@@ -51,6 +57,15 @@ public class ProductService {
 			result.add(e.getName());
 		}		
 		
+		return result;
+	}
+	
+	public List<String> getCategoryTypeOfProducts() {
+		ArrayList<String> result = new ArrayList<String>();
+		Collections.sort(productsList, Collections.reverseOrder(new CategoryComparator()));
+		for(Product e : productsList) {
+			result.add(e.getName());
+		}
 		return result;
 	}
 
