@@ -1,5 +1,5 @@
 {"xref": {
-  "whenMade": 1575335505178,
+  "whenMade": 1575337231757,
   "createdBy": "JBehave",
   "metaFilter": "-skip -ignore",
   "meta": [],
@@ -13,8 +13,8 @@
       "meta": "",
       "scenarios": "Scenario:Find products on sale\u000aGiven a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen these products are discounted in the same order: 20%, 0%, 40%\u000aThen I should be told about the products : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium\u000a\u000a\u000aScenario:Sort products on sale from the closest distance to the furthest\u000aGiven a list of products on sale : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen the distances between the product and the customer in the same order are : 0.4, 1.9, 0.8 in kilometers\u000aThen I should be told about the products from the closest distance to the furthest : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu\u000a\u000a\u000aScenario:Sort products on sale with the same distance from the highest rate\u000aGiven a list of products on sale with the same distance : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen the rates of the products are : 4, 3.9, 4.5 in stars\u000aThen I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu\u000a\u000a\u000aScenario:Sort products on sale by category if distance and rating are the same\u000aGiven a list of products on sale with the same distance and rating : Bubble Gum Fizz, Big Mac, Fanta McFloat\u000aWhen the category of products are : Drink, Food, Drink\u000aThen I should be told about the products in order from foods to drinks : Big Mac, Bubble Gum Fizz, Fanta McFloat\u000a\u000a\u000a",
       "passed": true,
-      "started": 1575335502948,
-      "duration": 532
+      "started": 1575337229831,
+      "duration": 491
     },
     {
       "description": "Adding products to the shopping cart",
@@ -25,8 +25,8 @@
       "meta": "",
       "scenarios": "Scenario:Adding a product to an empty cart\u000aGiven an empty cart\u000aAnd a list of products name : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aAnd the product's merchants in the same order are : Burger King, Geprek Bensu, McDonald's\u000aWhen I add 2 of Whopper Meal Medium to the cart\u000aThen there should be 2 of Whopper Meal Medium inside the cart\u000a\u000a\u000a",
       "passed": true,
-      "started": 1575335503508,
-      "duration": 61
+      "started": 1575337230337,
+      "duration": 59
     }
   ],
   "stepMatches": []

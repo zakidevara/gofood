@@ -51,4 +51,18 @@ public class add_products_to_cart_steps {
 		assertThat(addedItem.getQuantity()).isEqualTo(expectedItem.getQuantity());
 	}
 	
+	//Scenario 2 
+	@Given("a cart filled with $quantity of $productName from $productsMerchants")
+	public void givenAFilledCart(int quantity, String productName, String productMerchants) {
+		Product addedProduct;
+		cart = new ShoppingCart();
+		addedProduct = productService.find(productName);
+		CartItem item = new CartItem(addedProduct, quantity);
+		cart.add(item);
+	}
+	
+	
+	
+	
+	
 }

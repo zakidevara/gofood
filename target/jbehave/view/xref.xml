@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1575335505178</whenMade>
+  <whenMade>1575337231757</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-skip -ignore</metaFilter>
   <meta/>
@@ -40,8 +40,8 @@ Then I should be told about the products in order from foods to drinks : Big Mac
 
 </scenarios>
       <passed>true</passed>
-      <started>1575335502948</started>
-      <duration>532</duration>
+      <started>1575337229831</started>
+      <duration>491</duration>
     </story>
     <story>
       <description>Adding products to the shopping cart</description>
@@ -63,8 +63,8 @@ Then there should be 2 of Whopper Meal Medium inside the cart
 
 </scenarios>
       <passed>true</passed>
-      <started>1575335503508</started>
-      <duration>61</duration>
+      <started>1575337230337</started>
+      <duration>59</duration>
     </story>
   </stories>
   <stepMatches/>
