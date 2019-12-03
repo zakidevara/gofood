@@ -19,4 +19,9 @@
 <step outcome="successful">When the rates of the products are : <parameter>4, 3.9, 4.5</parameter> in stars</step>
 <step outcome="successful">Then I should be told about the products in order from the highest rating to the lowest : <parameter>Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu</parameter></step>
 </scenario>
+<scenario keyword="Scenario:" title="Sort products on sale by category if distance and rating are the same">
+<step outcome="successful">Given a list of products on sale with the same distance and rating : <parameter>Bubble Gum Fizz, Big Mac, Fanta McFloat</parameter></step>
+<step outcome="successful">When the category of products are : <parameter>Drink, Food, Drink</parameter></step>
+<step outcome="successful">Then I should be told about the products in order from foods to drinks : <parameter>Big Mac, Bubble Gum Fizz, Fanta McFloat</parameter></step>
+</scenario>
 </story>

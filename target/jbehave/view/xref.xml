@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1575327037177</whenMade>
+  <whenMade>1575335505178</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-skip -ignore</metaFilter>
   <meta/>
@@ -32,10 +32,16 @@ When the rates of the products are : 4, 3.9, 4.5 in stars
 Then I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu
 
 
+Scenario:Sort products on sale by category if distance and rating are the same
+Given a list of products on sale with the same distance and rating : Bubble Gum Fizz, Big Mac, Fanta McFloat
+When the category of products are : Drink, Food, Drink
+Then I should be told about the products in order from foods to drinks : Big Mac, Bubble Gum Fizz, Fanta McFloat
+
+
 </scenarios>
       <passed>true</passed>
-      <started>1575327035122</started>
-      <duration>497</duration>
+      <started>1575335502948</started>
+      <duration>532</duration>
     </story>
     <story>
       <description>Adding products to the shopping cart</description>
@@ -57,8 +63,8 @@ Then there should be 2 of Whopper Meal Medium inside the cart
 
 </scenarios>
       <passed>true</passed>
-      <started>1575327035633</started>
-      <duration>52</duration>
+      <started>1575335503508</started>
+      <duration>61</duration>
     </story>
   </stories>
   <stepMatches/>
