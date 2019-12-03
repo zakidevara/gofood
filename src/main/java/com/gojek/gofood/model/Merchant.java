@@ -32,6 +32,9 @@ public class Merchant {
 	}
 	
 	//GETTERS & SETTERS
+	public String getName() {
+		return this.name;
+	}
 	public float getRating() {
 		return this.rating;
 	}
@@ -46,7 +49,7 @@ public class Merchant {
 	}
 	public float getDistanceFromCustomer() {
 		return this.distanceFromCustomer;
-		}
+	}
 	public void setDistanceFromCustomer(float distanceFromCustomer) {
 		this.distanceFromCustomer = distanceFromCustomer;
 	}
