@@ -5,6 +5,8 @@ public class Product {
 	private float discount;
 	private float price;
 	private Merchant merchant;
+	private String category;
+
 	
 	//Constructors
 	public Product(String name, float discount, float price, Merchant merchant) {
@@ -13,7 +15,7 @@ public class Product {
 		this.price = price;
 		this.merchant = merchant;
 	}
-	
+
 	public Product(String name) {
 		this(name, 0, 0, null);
 	}
@@ -54,4 +56,9 @@ public class Product {
 	public float getRating() {
 		return merchant != null ? merchant.getRating() : null;
 	}
+
+	public String getCategory() {return category;}
+	public void setCategory(String newCategory) {category = newCategory;}
+
+
 }

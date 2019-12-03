@@ -32,6 +32,12 @@
 <div class="step successful">When the rates of the products are : <span class="step parameter">4, 3.9, 4.5</span> in stars</div>
 <div class="step successful">Then I should be told about the products in order from the highest rating to the lowest : <span class="step parameter">Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu</span></div>
 </div>
+<div class="scenario">
+<h2>Scenario: Sort products on sale by category if distance and rating are the same</h2>
+<div class="step successful">Given a list of products on sale with the same distance and rating : <span class="step parameter">Bubble Gum Fizz, Big Mac, Fanta McFloat</span></div>
+<div class="step successful">When the category of products are : <span class="step parameter">Drink, Food, Drink</span></div>
+<div class="step successful">Then I should be told about the products in order from foods to drinks : <span class="step parameter">Big Mac, Bubble Gum Fizz, Fanta McFloat</span></div>
+</div>
 </div>
 
 </body>
