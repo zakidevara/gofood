@@ -76,4 +76,14 @@ public class ProductService {
 		return result;
 	}
 	
+	public Merchant findMerchant(String merchantName) {
+		for(Product p : productsList) {
+			if(p.getMerchant() != null) {
+				if(p.getMerchant().getName().equals(merchantName))
+					return p.getMerchant();				
+			}
+		}
+		return null;
+	}
+	
 }

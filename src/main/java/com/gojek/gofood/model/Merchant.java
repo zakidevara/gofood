@@ -32,6 +32,9 @@ public class Merchant {
 	}
 	
 	//GETTERS & SETTERS
+	public String getName() {
+		return this.name;
+	}
 	public float getRating() {
 		return this.rating;
 	}

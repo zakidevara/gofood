@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="26" failures="0" name="com.gojek.gofood.jbehave.AcceptanceTestSuite" time="3.329" errors="0" skipped="0">
+<testsuite tests="33" failures="0" name="com.gojek.gofood.jbehave.AcceptanceTestSuite" time="5.972" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
@@ -65,30 +65,37 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="java.lang.Object" name="BeforeStories" time="0.018"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.037"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When these products are discounted in the same order: 20%\u002C 0%\u002C 40%" time="0.003"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium" time="0.011"/>
-  <testcase classname="Scenario: Find products on sale" name="Scenario: Find products on sale" time="0.212"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Given a list of products on sale : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When the distances between the product and the customer in the same order are : 0.4\u002C 1.9\u002C 0.8 in kilometers" time="0.001"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products from the closest distance to the furthest : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium\u002C Paket Geprek Bensu" time="0.001"/>
-  <testcase classname="Scenario: Sort products on sale from the closest distance to the furthest" name="Scenario: Sort products on sale from the closest distance to the furthest" time="0.003"/>
+  <testcase classname="java.lang.Object" name="BeforeStories" time="0.016"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.062"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When these products are discounted in the same order: 20%\u002C 0%\u002C 40%" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium" time="0"/>
+  <testcase classname="Scenario: Find products on sale" name="Scenario: Find products on sale" time="0.016"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Given a list of products on sale : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.015"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When the distances between the product and the customer in the same order are : 0.4\u002C 1.9\u002C 0.8 in kilometers" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products from the closest distance to the furthest : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium\u002C Paket Geprek Bensu" time="0.016"/>
+  <testcase classname="Scenario: Sort products on sale from the closest distance to the furthest" name="Scenario: Sort products on sale from the closest distance to the furthest" time="0.016"/>
   <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Given a list of products on sale with the same distance : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When the rates of the products are : 4\u002C 3.9\u002C 4.5 in stars" time="0"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium\u002C Whopper Meal Medium\u002C Paket Geprek Bensu" time="0"/>
-  <testcase classname="Scenario: Sort products on sale with the same distance from the highest rate" name="Scenario: Sort products on sale with the same distance from the highest rate" time="0.001"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Given a list of products on sale with the same distance and rating : Bubble Gum Fizz\u002C Big Mac\u002C Fanta McFloat" time="0.002"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When the category of products are : Drink\u002C Food\u002C Drink" time="0.004"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products in order from foods to drinks : Big Mac\u002C Bubble Gum Fizz\u002C Fanta McFloat" time="0.005"/>
-  <testcase classname="Scenario: Sort products on sale by category if distance and rating are the same" name="Scenario: Sort products on sale by category if distance and rating are the same" time="0.007"/>
-  <testcase classname="mencari_makanan_promo.story" name="mencari_makanan_promo.story" time="0.018"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="Given an empty cart" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When the rates of the products are : 4\u002C 3.9\u002C 4.5 in stars" time="0.016"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium\u002C Whopper Meal Medium\u002C Paket Geprek Bensu" time="0.031"/>
+  <testcase classname="Scenario: Sort products on sale with the same distance from the highest rate" name="Scenario: Sort products on sale with the same distance from the highest rate" time="0.031"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Given a list of products on sale with the same distance and rating : Bubble Gum Fizz\u002C Big Mac\u002C Fanta McFloat" time="0.016"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When the category of products are : Drink\u002C Food\u002C Drink" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products in order from foods to drinks : Big Mac\u002C Bubble Gum Fizz\u002C Fanta McFloat" time="0"/>
+  <testcase classname="Scenario: Sort products on sale by category if distance and rating are the same" name="Scenario: Sort products on sale by category if distance and rating are the same" time="0"/>
+  <testcase classname="mencari_makanan_promo.story" name="mencari_makanan_promo.story" time="0.015"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="Given an empty cart" time="0"/>
   <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="And a list of products name : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0"/>
-  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="And the product\&apos;s merchants in the same order are : Burger King\u002C Geprek Bensu\u002C McDonald\&apos;s" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="And the product\&apos;s merchants in the same order are : Burger King\u002C Geprek Bensu\u002C McDonald\&apos;s" time="0.016"/>
   <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="When I add 2 of Whopper Meal Medium to the cart" time="0"/>
   <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="Then there should be 2 of Whopper Meal Medium inside the cart" time="0"/>
-  <testcase classname="Scenario: Adding a product to an empty cart" name="Scenario: Adding a product to an empty cart" time="0.001"/>
-  <testcase classname="add_products_to_cart.story" name="add_products_to_cart.story" time="0.008"/>
-  <testcase classname="java.lang.Object" name="AfterStories" time="0.956"/>
+  <testcase classname="Scenario: Adding a product to an empty cart" name="Scenario: Adding a product to an empty cart" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="Given a list of products name : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium\u002C Fish Fillet" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="And the product\&apos;s merchants in the same order are : Burger King\u002C Geprek Bensu\u002C McDonald\&apos;s\u002C Burger King" time="0.016"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="And a cart filled with 2 of Whopper Meal Medium from Burger King" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="When I add 3 of Fish Fillet to the cart" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="Then there should be 2 of Whopper Meal Medium inside the cart\u200B" time="0"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="And there should be 3 of Fish Fillet inside the cart" time="0.015"/>
+  <testcase classname="Scenario: Adding a product to a cart filled with products from the same merchant" name="Scenario: Adding a product to a cart filled with products from the same merchant" time="0.015"/>
+  <testcase classname="add_products_to_cart.story" name="add_products_to_cart.story" time="0.015"/>
+  <testcase classname="java.lang.Object" name="AfterStories" time="0"/>
 </testsuite>
