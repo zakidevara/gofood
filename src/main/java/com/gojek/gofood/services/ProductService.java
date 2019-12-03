@@ -6,8 +6,7 @@ import java.util.List;
 import com.gojek.gofood.model.*;
 
 public class ProductService {
-	private List<Product> productsList;
-	
+	private List<Product> productsList;	
 	private class DistanceComparator implements Comparator<Product>{
 		public int compare(Product product1, Product product2) {
 			return ((Float) (product1.getDistance())).compareTo( (Float)product2.getDistance());
@@ -20,10 +19,15 @@ public class ProductService {
 		}
 	}
 	
-	public ProductService(List<Product> pl) {
-		productsList = pl;
+	private class CategoryComparator implements Comparator<Product>{
+		public int compare(Product product1, Product product2) {
+			return((String) (product1.getCategory())).compareTo( (String)product2.getCategory());
+		}
 	}
 	
+	public ProductService(List<Product> pl) {
+		productsList = pl;
+	}	
 	
 	public List<String> getDiscountedProductsName() {
 		ArrayList<String> result = new ArrayList<String>();
@@ -54,6 +58,7 @@ public class ProductService {
 		return result;
 	}
 	
+
 	public Product find(String productName) {
 		for(Product p : productsList) {
 			if(p.getName().equals(productName))
@@ -62,5 +67,13 @@ public class ProductService {
 		return null;
 	}
 
+	public List<String> getCategoryTypeOfProducts() {
+		ArrayList<String> result = new ArrayList<String>();
+		Collections.sort(productsList, Collections.reverseOrder(new CategoryComparator()));
+		for(Product e : productsList) {
+			result.add(e.getName());
+		}
+		return result;
+	}
 	
 }

@@ -13,6 +13,7 @@ public class mencari_makanan_promo_steps {
 	List<String> proposedProducts;
 	ProductService productService;
 	
+	
 	//Scenario 1
 	@Given("a list of products : $givenProducts")
 	public void givenListOfProducts(List<String> givenProducts) {
@@ -94,5 +95,31 @@ public class mencari_makanan_promo_steps {
 	@Then("I should be told about the products in order from the highest rating to the lowest : $expectedProducts")
 	public void thenShowProductsInOrderOfRates(List<String> expectedProducts) {
 		assertThat(proposedProducts).isEqualTo(expectedProducts);
+	}
+	
+	//Scenario 4
+	@Given("a list of products on sale with the same distance and rating : $givenProducts")
+	public void givenListOfProductsOnSaleWithTheSameDistanceAndRating(List<String> givenProducts) {
+		products = new ArrayList<Product>();
+		for(String e : givenProducts) {
+			products.add(new Product(e));
+
+		}
+	}
+	
+	@When("the category of products are : $typeOfProducts")
+	public void whenCategoryAre(List<String> typeOfProducts) {
+		int i = 0;
+		for(Product e : products) {
+			e.setCategory(typeOfProducts.get(i));
+			i++;
+		}
+		productService = new ProductService(products);
+		proposedProducts = productService.getCategoryTypeOfProducts();
+	}
+	
+	@Then("I should be told about the products in order from foods to drinks : $typeProducts")
+	public void thenShowProductsOfCategory(List<String> typeProducts) {
+		assertThat(proposedProducts).isEqualTo(typeProducts);
 	}
 }
