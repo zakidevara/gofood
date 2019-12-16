@@ -12,6 +12,7 @@ When I add 2 of Whopper Meal Medium to the cart
 Then there should be 2 of Whopper Meal Medium inside the cart
 
 Scenario: Adding sold out product
-Given a sold out product : Whopper Meal Medium
+Given an empty cart
+And a sold out product : Whopper Meal Medium
 When I add 1 of Whopper Meal Medium to the cart
 Then there should be 0 of Whopper Meal Medium inside the cart

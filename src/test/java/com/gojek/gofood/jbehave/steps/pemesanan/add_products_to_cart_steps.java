@@ -50,5 +50,20 @@ public class add_products_to_cart_steps {
 		assertThat(addedItem.getName()).isEqualTo(expectedItem.getName());
 		assertThat(addedItem.getQuantity()).isEqualTo(expectedItem.getQuantity());
 	}
-	
+
+	// Scenario 2
+	@Given("a sold out product : $productName")
+	public void aSoldOutProduct(String productName) {
+		productService = new ProductService(products);
+		CartItem item = new CartItem(productService.find(productName), 0);
+		assertThat(item.getQuantity()).isEqualTo(0);
+	}
+
+	@Then("there should be 0 of $expectedProductName inside the cart")
+	public void thereShouldBeZeroProductInsideTheCart(int expectedQty, String expectedProductName) {
+		CartItem addedItem = cart.find(expectedProductName);
+		CartItem expectedItem = new CartItem(productService.find(expectedProductName), expectedQty);
+		assertThat(addedItem.getName()).isEqualTo(expectedItem.getName());
+		assertThat(addedItem.getQuantity()).isEqualTo(0);
+	}
 }
