@@ -1,4 +1,5 @@
 Adding products to the shopping cart
+
 Narrative:
 In order to order multiple products at once
 As a customer
