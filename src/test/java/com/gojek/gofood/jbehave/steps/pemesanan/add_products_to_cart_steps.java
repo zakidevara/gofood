@@ -28,8 +28,14 @@ public class add_products_to_cart_steps {
 	@Given("the product's merchants in the same order are : $productsMerchants")
 	public void givenTheProductsMerchants(List<String> productsMerchants) {
 		int i = 0;
+		productService = new ProductService(products);
 		for(Product e : products) {
-			e.setMerchant(new Merchant(productsMerchants.get(i)));
+			Merchant m = productService.findMerchant(productsMerchants.get(i));
+			if(m != null) {
+				e.setMerchant(m);				
+			}else {
+				e.setMerchant(new Merchant(productsMerchants.get(i)));
+			}
 			i++;
 		}		
 	}
@@ -37,7 +43,6 @@ public class add_products_to_cart_steps {
 	@When("I add $quantity of $productName to the cart")
 	public void whenAddingProductToCart(int quantity, String productName) {
 		Product addedProduct;
-		productService = new ProductService(products);
 		addedProduct = productService.find(productName);
 		CartItem item = new CartItem(addedProduct, quantity);
 		cart.add(item);
@@ -50,8 +55,18 @@ public class add_products_to_cart_steps {
 		assertThat(addedItem.getName()).isEqualTo(expectedItem.getName());
 		assertThat(addedItem.getQuantity()).isEqualTo(expectedItem.getQuantity());
 	}
-
-	// Scenario 2
+	
+	//Scenario 2 
+	@Given("a cart filled with $quantity of $productName from $productsMerchants")
+	public void givenAFilledCart(int quantity, String productName, String productMerchants) {
+		Product addedProduct;
+		cart = new ShoppingCart();
+		addedProduct = productService.find(productName);
+		CartItem item = new CartItem(addedProduct, quantity);
+		cart.add(item);
+	}	
+	
+  // Scenario 3
 	@Given("a sold out product : $productName")
 	public void aSoldOutProduct(String productName) {
 			products = new ArrayList<Product>();
