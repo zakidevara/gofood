@@ -25,6 +25,8 @@ public class Product {
 		merchant.addProduct(this);
 	}
 	
+	
+	
 	public String getName() {
 		return name;
 	}

@@ -13,7 +13,10 @@ public class ShoppingCart {
 	}
 	
 	public void add(CartItem item) {
-		itemList.add(item);
+		if (itemList.size() > 0 && item.getProduct().getMerchant().equals(itemList.get(0).getProduct().getMerchant())) {
+			itemList.add(item);
+		}
+		
 	}
 	
 	public CartItem find(String itemName) {

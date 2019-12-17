@@ -19,6 +19,9 @@ public class CartItem {
 		return this.getName().equals(other.getName()) && this.getQuantity() == other.getQuantity();
 	}
 	
+	public Product getProduct() {
+		return product;
+	}
 
 
 }
