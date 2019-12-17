@@ -19,3 +19,9 @@ And a cart filled with 2 of Whopper Meal Medium from Burger King
 When I add 3 of Fish Fillet to the cart
 Then there should be 2 of Whopper Meal Medium inside the cart
 And there should be 3 of Fish Fillet inside the cart
+
+Scenario: Adding sold out product
+Given an empty cart
+And a sold out product : Whopper Meal Medium
+When I add 1 of Whopper Meal Medium to the cart
+Then there should be 0 of Whopper Meal Medium inside the cart
