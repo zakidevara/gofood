@@ -56,6 +56,7 @@ public class ProductService {
 		ArrayList<String> result = new ArrayList<String>();
 		Collections.sort(productsList, new DistanceComparator());
 		for(Product e : productsList) {
+			if (e.getDistance() <= 20)
 			result.add(e.getName());
 		}	
 		stopwatch.stop();

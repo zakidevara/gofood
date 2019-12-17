@@ -12,7 +12,8 @@ public class mencari_makanan_promo_steps {
 	List<Product> products;
 	List<String> proposedProducts;
 	ProductService productService;
-	
+
+
 	
 	//Scenario 1
 	@Given("a list of products : $givenProducts")
@@ -121,5 +122,32 @@ public class mencari_makanan_promo_steps {
 	@Then("I should be told about the products in order from foods to drinks : $typeProducts")
 	public void thenShowProductsOfCategory(List<String> typeProducts) {
 		assertThat(proposedProducts).isEqualTo(typeProducts);
+	}
+	
+	//Scenario 5
+	
+	@Given("a list of Merchants : $givenProducts")
+	public void limitShownMerchantsByDistance(List<String> givenProduct) {
+		products = new ArrayList<Product>();
+		for(String e : givenProduct) {
+			products.add(new Product(e));
+		}
+	}
+	 
+	@When("the distance of the Merchants are : $distanceOfProducts")
+	public void whenDistanceAre(List<Float> distanceOfProducts) {
+		int x = 1;
+
+		for(Float e : distanceOfProducts) {
+			products.get(x).getMerchant().setDistanceFromCustomer(e);
+			x++;
+		}
+		productService = new ProductService(products);
+		proposedProducts = productService.getProductsNameOrderByDistanceAsc();		
+	}
+	
+	@Then("I should be shown Merchants less than 20 kilometers : $distanceOfProducts")
+	public void thenShownMerchantsLessThan20(List<String> distanceOfProducts) {
+		assertThat(proposedProducts).isEqualTo(distanceOfProducts);
 	}
 }
