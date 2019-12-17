@@ -6,6 +6,7 @@ public class Product {
 	private float price;
 	private Merchant merchant;
 	private String category;
+	private int stock;
 
 	
 	//Constructors
@@ -23,6 +24,11 @@ public class Product {
 	public Product(String name, Merchant m) {
 		this(name, 0, 0, m);
 		merchant.addProduct(this);
+	}
+	
+	public Product(String name, int stock) {
+		this(name,0,0,null);
+		this.stock = stock;
 	}
 	
 	public String getName() {
@@ -60,5 +66,12 @@ public class Product {
 	public String getCategory() {return category;}
 	public void setCategory(String newCategory) {category = newCategory;}
 
+	public void setStock(int stock) {
+		this.stock = stock;
+	}
+	
+	public int getStock() {
+		return stock;
+	}
 
 }
