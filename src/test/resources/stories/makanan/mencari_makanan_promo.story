@@ -24,3 +24,9 @@ Scenario: Sort products on sale by category if distance and rating are the same
 Given a list of products on sale with the same distance and rating : Bubble Gum Fizz, Big Mac, Fanta McFloat
 When the category of products are : Drink, Food, Drink
 Then I should be told about the products in order from foods to drinks : Big Mac, Bubble Gum Fizz, Fanta McFloat
+
+Scenario: Limit shown Merchants by distance
+Given a list of Merchants : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium
+When the distance of the Merchants are : 5, 7, 21 in kilometers
+Then I should be shown Merchants less than 20 kilometers : Whopper Meal Medium, Paket Geprek Bensu
+
