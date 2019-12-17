@@ -52,7 +52,7 @@ public class makanan_favorite_steps {
 	public void givenListOfFavoritedProducts(List<String> favoritedProductName) {
 		favoritedProducts = new ArrayList<Product>();
 		for (String e : favoritedProductName) {
-			products.add(new Product(e));
+			user.addFavoriteProduct(new Product(e));
 		}		
 	}
 	
@@ -62,6 +62,4 @@ public class makanan_favorite_steps {
 		Product unfavoritedProduct = productService.find(productName);
 		user.removeFavoriteProduct(unfavoritedProduct);
 	}
-	
-	
 }
