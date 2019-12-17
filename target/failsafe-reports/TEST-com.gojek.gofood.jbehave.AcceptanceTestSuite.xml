@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="44" failures="0" name="com.gojek.gofood.jbehave.AcceptanceTestSuite" time="11.053" errors="0" skipped="31">
+<testsuite tests="44" failures="0" name="com.gojek.gofood.jbehave.AcceptanceTestSuite" time="3.865" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
     <property name="java.vm.version" value="25.231-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Rasya\Documents\Semester 3\Pemrograman Berorientasi Objek\praktek\gofood\gofood"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\gofood\gofood"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="ID"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Rasya\Documents\Semester 3\Pemrograman Berorientasi Objek\praktek\gofood\gofood"/>
+    <property name="user.dir" value="E:\gofood\gofood"/>
     <property name="java.runtime.version" value="1.8.0_231-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\Rasya\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\asus\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -29,19 +29,19 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.2\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_231/bin/server;C:/Program Files/Java/jre1.8.0_231/bin;C:/Program Files/Java/jre1.8.0_231/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;D:\app\Rasya\product\11.2.0\dbhome_1\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.6.2\bin;C:\Users\Rasya\AppData\Local\Microsoft\WindowsApps;;C:\Users\Rasya\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.4/bin/server;C:/Program Files/Java/jdk-11.0.4/bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;F:\app\asus\product\11.2.0\dbhome_2\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.2\bin\;C:\php;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\PuTTY\;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\Spark\spark-2.4.4-bin-hadoop2.7\bin;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;C:\Users\asus\AppData\Local\Programs\Microsoft VS Code\bin;;C:\Users\asus\Desktop;;."/>
     <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.2\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
     <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.6.2\bin\..\lib\jansi-native"/>
-    <property name="user.home" value="C:\Users\Rasya"/>
+    <property name="user.home" value="C:\Users\asus"/>
     <property name="user.timezone" value="Asia/Bangkok"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="Rasya"/>
+    <property name="user.name" value="asus"/>
     <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.2\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
@@ -54,121 +54,59 @@
     <property name="java.version" value="1.8.0_231"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes"/>
-    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="C:\Program Files\apache-maven-3.6.2\bin\.."/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="java.lang.Object" name="BeforeStories" time="0.034"/>
-  <testcase classname="[PENDING] Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" name="[PENDING] Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.292">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] When these products are discounted in the same order: 20%\u002C 0%\u002C 40%" name="[PENDING] When these products are discounted in the same order: 20%\u002C 0%\u002C 40%" time="0.299">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] Then I should be told about the products : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium" name="[PENDING] Then I should be told about the products : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium" time="0.302">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Find products on sale" name="Scenario: Find products on sale" time="0.658"/>
-  <testcase classname="[PENDING] Given a list of products on sale : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" name="[PENDING] Given a list of products on sale : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] When the distances between the product and the customer in the same order are : 0.4\u002C 1.9\u002C 0.8 in kilometers" name="[PENDING] When the distances between the product and the customer in the same order are : 0.4\u002C 1.9\u002C 0.8 in kilometers" time="0.002">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] Then I should be told about the products from the closest distance to the furthest : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium\u002C Paket Geprek Bensu" name="[PENDING] Then I should be told about the products from the closest distance to the furthest : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium\u002C Paket Geprek Bensu" time="0.014">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Sort products on sale from the closest distance to the furthest" name="Scenario: Sort products on sale from the closest distance to the furthest" time="0.029"/>
-  <testcase classname="[PENDING] Given a list of products on sale with the same distance : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" name="[PENDING] Given a list of products on sale with the same distance : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] When the rates of the products are : 4\u002C 3.9\u002C 4.5 in stars" name="[PENDING] When the rates of the products are : 4\u002C 3.9\u002C 4.5 in stars" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] Then I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium\u002C Whopper Meal Medium\u002C Paket Geprek Bensu" name="[PENDING] Then I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium\u002C Whopper Meal Medium\u002C Paket Geprek Bensu" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Sort products on sale with the same distance from the highest rate" name="Scenario: Sort products on sale with the same distance from the highest rate" time="0.009"/>
-  <testcase classname="[PENDING] Given a list of products on sale with the same distance and rating : Bubble Gum Fizz\u002C Big Mac\u002C Fanta McFloat" name="[PENDING] Given a list of products on sale with the same distance and rating : Bubble Gum Fizz\u002C Big Mac\u002C Fanta McFloat" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] When the category of products are : Drink\u002C Food\u002C Drink" name="[PENDING] When the category of products are : Drink\u002C Food\u002C Drink" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] Then I should be told about the products in order from foods to drinks : Big Mac\u002C Bubble Gum Fizz\u002C Fanta McFloat" name="[PENDING] Then I should be told about the products in order from foods to drinks : Big Mac\u002C Bubble Gum Fizz\u002C Fanta McFloat" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Sort products on sale by category if distance and rating are the same" name="Scenario: Sort products on sale by category if distance and rating are the same" time="0.018"/>
-  <testcase classname="mencari_makanan_promo.story" name="mencari_makanan_promo.story" time="0.033"/>
-  <testcase classname="[PENDING] Given an empty cart" name="[PENDING] Given an empty cart" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] And a list of products name : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" name="[PENDING] And a list of products name : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] And the product\&apos;s merchants in the same order are : Burger King\u002C Geprek Bensu\u002C McDonald\&apos;s" name="[PENDING] And the product\&apos;s merchants in the same order are : Burger King\u002C Geprek Bensu\u002C McDonald\&apos;s" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] When I add 2 of Whopper Meal Medium to the cart" name="[PENDING] When I add 2 of Whopper Meal Medium to the cart" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] Then there should be 2 of Whopper Meal Medium inside the cart" name="[PENDING] Then there should be 2 of Whopper Meal Medium inside the cart" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Adding a product to an empty cart" name="Scenario: Adding a product to an empty cart" time="0.01"/>
-  <testcase classname="[PENDING] Given a list of products name : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium\u002C Fish Fillet" name="[PENDING] Given a list of products name : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium\u002C Fish Fillet" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] And the product\&apos;s merchants in the same order are : Burger King\u002C Geprek Bensu\u002C McDonald\&apos;s\u002C Burger King" name="[PENDING] And the product\&apos;s merchants in the same order are : Burger King\u002C Geprek Bensu\u002C McDonald\&apos;s\u002C Burger King" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] And a cart filled with 2 of Whopper Meal Medium from Burger King" name="[PENDING] And a cart filled with 2 of Whopper Meal Medium from Burger King" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] When I add 3 of Fish Fillet to the cart" name="[PENDING] When I add 3 of Fish Fillet to the cart" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] Then there should be 2 of Whopper Meal Medium inside the cart\u200B" name="[PENDING] Then there should be 2 of Whopper Meal Medium inside the cart\u200B" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] And there should be 3 of Fish Fillet inside the cart" name="[PENDING] And there should be 3 of Fish Fillet inside the cart" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Adding a product to a cart filled with products from the same merchant" name="Scenario: Adding a product to a cart filled with products from the same merchant" time="0.007"/>
-  <testcase classname="add_products_to_cart.story" name="add_products_to_cart.story" time="0.019"/>
-  <testcase classname="[PENDING] Given a user with no favorited products" name="[PENDING] Given a user with no favorited products" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] And available products : Paket Geprek Bensu\u002C Whopper" name="[PENDING] And available products : Paket Geprek Bensu\u002C Whopper" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] When the user favorited Paket Geprek Bensu" name="[PENDING] When the user favorited Paket Geprek Bensu" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] Then the user should have : Paket Geprek Bensu in their favorited products" name="[PENDING] Then the user should have : Paket Geprek Bensu in their favorited products" time="0.001">
-    <skipped/>
-  </testcase>
+  <testcase classname="java.lang.Object" name="BeforeStories" time="0.023"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Given a list of products : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.038"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When these products are discounted in the same order: 20%\u002C 0%\u002C 40%" time="0.012"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium" time="0.013"/>
+  <testcase classname="Scenario: Find products on sale" name="Scenario: Find products on sale" time="0.014"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Given a list of products on sale : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When the distances between the product and the customer in the same order are : 0.4\u002C 1.9\u002C 0.8 in kilometers" time="0.018"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products from the closest distance to the furthest : Whopper Meal Medium\u002C Paket McSpicy Smokey BBQ Medium\u002C Paket Geprek Bensu" time="0.008"/>
+  <testcase classname="Scenario: Sort products on sale from the closest distance to the furthest" name="Scenario: Sort products on sale from the closest distance to the furthest" time="0.008"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Given a list of products on sale with the same distance : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.004"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When the rates of the products are : 4\u002C 3.9\u002C 4.5 in stars" time="0.004"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium\u002C Whopper Meal Medium\u002C Paket Geprek Bensu" time="0.006"/>
+  <testcase classname="Scenario: Sort products on sale with the same distance from the highest rate" name="Scenario: Sort products on sale with the same distance from the highest rate" time="0.007"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Given a list of products on sale with the same distance and rating : Bubble Gum Fizz\u002C Big Mac\u002C Fanta McFloat" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="When the category of products are : Drink\u002C Food\u002C Drink" time="0.005"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.mencari_makanan_promo_steps" name="Then I should be told about the products in order from foods to drinks : Big Mac\u002C Bubble Gum Fizz\u002C Fanta McFloat" time="0.002"/>
+  <testcase classname="Scenario: Sort products on sale by category if distance and rating are the same" name="Scenario: Sort products on sale by category if distance and rating are the same" time="0.003"/>
+  <testcase classname="mencari_makanan_promo.story" name="mencari_makanan_promo.story" time="0.006"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="Given an empty cart" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="And a list of products name : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="And the product\&apos;s merchants in the same order are : Burger King\u002C Geprek Bensu\u002C McDonald\&apos;s" time="0.01"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="When I add 2 of Whopper Meal Medium to the cart" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="Then there should be 2 of Whopper Meal Medium inside the cart" time="0.02"/>
+  <testcase classname="Scenario: Adding a product to an empty cart" name="Scenario: Adding a product to an empty cart" time="0.02"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="Given a list of products name : Whopper Meal Medium\u002C Paket Geprek Bensu\u002C Paket McSpicy Smokey BBQ Medium\u002C Fish Fillet" time="0.001"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="And the product\&apos;s merchants in the same order are : Burger King\u002C Geprek Bensu\u002C McDonald\&apos;s\u002C Burger King" time="0.01"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="And a cart filled with 2 of Whopper Meal Medium from Burger King" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="When I add 3 of Fish Fillet to the cart" time="0.004"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="Then there should be 2 of Whopper Meal Medium inside the cart\u200B" time="0.007"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.pemesanan.add_products_to_cart_steps" name="And there should be 3 of Fish Fillet inside the cart" time="0.004"/>
+  <testcase classname="Scenario: Adding a product to a cart filled with products from the same merchant" name="Scenario: Adding a product to a cart filled with products from the same merchant" time="0.005"/>
+  <testcase classname="add_products_to_cart.story" name="add_products_to_cart.story" time="0.008"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.makanan_favorite_steps" name="Given a user with no favorited products" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.makanan_favorite_steps" name="And available products : Paket Geprek Bensu\u002C Whopper" time="0.002"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.makanan_favorite_steps" name="When the user favorited Paket Geprek Bensu" time="0.002"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.makanan_favorite_steps" name="Then the user should have : Paket Geprek Bensu in their favorited products" time="0.005"/>
   <testcase classname="Scenario: Favoriting a product" name="Scenario: Favoriting a product" time="0.006"/>
-  <testcase classname="[PENDING] Given a user with favorited products" name="[PENDING] Given a user with favorited products" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] And List of favorited products are : Paket Geprek Bensu\u002C Whopper in their favorited products" name="[PENDING] And List of favorited products are : Paket Geprek Bensu\u002C Whopper in their favorited products" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] When the user unfavorited Whopper" name="[PENDING] When the user unfavorited Whopper" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="[PENDING] Then the user should have : Paket Geprek Bensu in their favorited products\u200B" name="[PENDING] Then the user should have : Paket Geprek Bensu in their favorited products\u200B" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Unfavoriting a product" name="Scenario: Unfavoriting a product" time="0.005"/>
-  <testcase classname="makanan_favorite.story" name="makanan_favorite.story" time="0.051"/>
-  <testcase classname="java.lang.Object" name="AfterStories" time="6.786"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.makanan_favorite_steps" name="Given a user with favorited products" time="0.008"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.makanan_favorite_steps" name="And List of favorited products are : Paket Geprek Bensu\u002C Whopper in their favorited products" time="0.002"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.makanan_favorite_steps" name="When the user unfavorited Whopper" time="0.003"/>
+  <testcase classname="com.gojek.gofood.jbehave.steps.makanan.makanan_favorite_steps" name="Then the user should have : Paket Geprek Bensu in their favorited products\u200B" time="0.003"/>
+  <testcase classname="Scenario: Unfavoriting a product" name="Scenario: Unfavoriting a product" time="0.004"/>
+  <testcase classname="makanan_favorite.story" name="makanan_favorite.story" time="0.006"/>
+  <testcase classname="java.lang.Object" name="AfterStories" time="0.001"/>
 </testsuite>

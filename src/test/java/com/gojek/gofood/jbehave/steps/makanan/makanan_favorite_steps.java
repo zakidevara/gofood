@@ -58,7 +58,7 @@ public class makanan_favorite_steps {
 	
 	@When("the user unfavorited $productName")
 	public void whenUserUnfavoritedAProduct(String productName) {
-		productService = new ProductService(products);
+		productService = new ProductService(user.getFavoriteProducts());
 		Product unfavoritedProduct = productService.find(productName);
 		user.removeFavoriteProduct(unfavoritedProduct);
 	}
