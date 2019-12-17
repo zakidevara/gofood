@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.gojek.gofood.jbehave.AcceptanceTestSuite
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.858 sec
+=======
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 27, Time elapsed: 6.844 sec
+>>>>>>> iqbal
