@@ -1,11 +1,6 @@
 #org.jbehave.core.reporters.PostStoryStatisticsCollector
-<<<<<<< HEAD
-#Tue Dec 17 09:20:42 ICT 2019
-duration=11
-=======
-#Tue Dec 17 09:14:11 ICT 2019
-duration=25
->>>>>>> iqbal
+#Tue Dec 17 10:34:00 ICT 2019
+duration=18
 notAllowed=0
 examples=0
 scenariosNotAllowed=0

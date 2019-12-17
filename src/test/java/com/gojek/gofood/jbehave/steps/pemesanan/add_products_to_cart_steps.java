@@ -65,14 +65,12 @@ public class add_products_to_cart_steps {
 		CartItem item = new CartItem(addedProduct, quantity);
 		cart.add(item);
 	}	
-	
 
+  // Scenario 3
 
-	// Scenario 2
 	@Given("a sold out product : $productName")
 	public void aSoldOutProduct(String productName) {
 			products = new ArrayList<Product>();
 			products.add(new Product(productName, 0));
 	}
-
 }

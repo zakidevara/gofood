@@ -1,25 +1,9 @@
 {"xref": {
-<<<<<<< HEAD
-  "whenMade": 1576549244670,
-=======
-  "whenMade": 1576548856935,
->>>>>>> iqbal
+  "whenMade": 1576553646989,
   "createdBy": "JBehave",
   "metaFilter": "-skip -ignore",
   "meta": [],
   "stories": [
-    {
-      "description": "Save a list of favorited products",
-      "narrative": "In order to find favorite products easily\u000aAs a customer\u000aI want to store favorited products in one place\u000a",
-      "name": "makanan_favorite.story",
-      "path": "stories/makanan/makanan_favorite.story",
-      "html": "stories.makanan.makanan_favorite.html",
-      "meta": "",
-      "scenarios": "Scenario:Favoriting a product\u000aGiven a user with no favorited products\u000aAnd available products : Paket Geprek Bensu, Whopper\u000aWhen the user favorited Paket Geprek Bensu\u000aThen the user should have : Paket Geprek Bensu in their favorited products\u000a\u000a\u000a",
-      "passed": true,
-      "started": 1576548851804,
-      "duration": 945
-    },
     {
       "description": "Find out which products are on sale",
       "narrative": "In order to get the best deals available\u000aAs a customer\u000aI want to know which products are on sale\u000a",
@@ -29,13 +13,8 @@
       "meta": "",
       "scenarios": "Scenario:Find products on sale\u000aGiven a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen these products are discounted in the same order: 20%, 0%, 40%\u000aThen I should be told about the products : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium\u000a\u000a\u000aScenario:Sort products on sale from the closest distance to the furthest\u000aGiven a list of products on sale : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen the distances between the product and the customer in the same order are : 0.4, 1.9, 0.8 in kilometers\u000aThen I should be told about the products from the closest distance to the furthest : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu\u000a\u000a\u000aScenario:Sort products on sale with the same distance from the highest rate\u000aGiven a list of products on sale with the same distance : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aWhen the rates of the products are : 4, 3.9, 4.5 in stars\u000aThen I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu\u000a\u000a\u000aScenario:Sort products on sale by category if distance and rating are the same\u000aGiven a list of products on sale with the same distance and rating : Bubble Gum Fizz, Big Mac, Fanta McFloat\u000aWhen the category of products are : Drink, Food, Drink\u000aThen I should be told about the products in order from foods to drinks : Big Mac, Bubble Gum Fizz, Fanta McFloat\u000a\u000a\u000a",
       "passed": true,
-<<<<<<< HEAD
-      "started": 1576549242278,
-      "duration": 521
-=======
-      "started": 1576548852768,
-      "duration": 85
->>>>>>> iqbal
+      "started": 1576553640749,
+      "duration": 485
     },
     {
       "description": "Adding products to the shopping cart",
@@ -44,11 +23,10 @@
       "path": "stories/pemesanan/add_products_to_cart.story",
       "html": "stories.pemesanan.add_products_to_cart.html",
       "meta": "",
-      "scenarios": "Scenario:Adding a product to an empty cart\u000aGiven an empty cart\u000aAnd a list of products name : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aAnd the product's merchants in the same order are : Burger King, Geprek Bensu, McDonald's\u000aWhen I add 2 of Whopper Meal Medium to the cart\u000aThen there should be 2 of Whopper Meal Medium inside the cart\u000a\u000a\u000aScenario:Adding a product to a cart filled with products from the same merchant\u000aGiven a list of products name : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium, Fish Fillet\u000aAnd the product's merchants in the same order are : Burger King, Geprek Bensu, McDonald's, Burger King\u000aAnd a cart filled with 2 of Whopper Meal Medium from Burger King\u000aWhen I add 3 of Fish Fillet to the cart\u000aThen there should be 2 of Whopper Meal Medium inside the cart\u000aAnd there should be 3 of Fish Fillet inside the cart\u000a\u000a\u000a",
-      "passed": true,
-<<<<<<< HEAD
-      "started": 1576549242813,
-      "duration": 103
+      "scenarios": "Scenario:Adding a product to an empty cart\u000aGiven an empty cart\u000aAnd a list of products name : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium\u000aAnd the product's merchants in the same order are : Burger King, Geprek Bensu, McDonald's\u000aWhen I add 2 of Whopper Meal Medium to the cart\u000aThen there should be 2 of Whopper Meal Medium inside the cart\u000a\u000a\u000aScenario:Adding a product to a cart filled with products from the same merchant\u000aGiven a list of products name : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium, Fish Fillet\u000aAnd the product's merchants in the same order are : Burger King, Geprek Bensu, McDonald's, Burger King\u000aAnd a cart filled with 2 of Whopper Meal Medium from Burger King\u000aWhen I add 3 of Fish Fillet to the cart\u000aThen there should be 2 of Whopper Meal Medium inside the cart\u000aAnd there should be 3 of Fish Fillet inside the cart\u000a\u000a\u000aScenario:Adding sold out product\u000aGiven an empty cart\u000aAnd a sold out product : Whopper Meal Medium\u000aWhen I add 1 of Whopper Meal Medium to the cart\u000aThen there should be 0 of Whopper Meal Medium inside the cart\u000a\u000a\u000a",
+      "passed": false,
+      "started": 1576553641249,
+      "duration": 107
     },
     {
       "description": "Save a list of favorited products",
@@ -59,12 +37,8 @@
       "meta": "",
       "scenarios": "Scenario:Favoriting a product\u000aGiven a user with no favorited products\u000aAnd available products : Paket Geprek Bensu, Whopper\u000aWhen the user favorited Paket Geprek Bensu\u000aThen the user should have : Paket Geprek Bensu in their favorited products\u000a\u000a\u000aScenario:Unfavoriting a product\u000aGiven a user with favorited products\u000aAnd List of favorited products are : Paket Geprek Bensu, Whopper in their favorited products\u000aWhen the user unfavorited Whopper\u000aThen the user should have : Paket Geprek Bensu in their favorited products\u000a\u000a\u000a",
       "passed": true,
-      "started": 1576549242929,
-      "duration": 59
-=======
-      "started": 1576548852876,
+      "started": 1576553641366,
       "duration": 53
->>>>>>> iqbal
     }
   ],
   "stepMatches": []
