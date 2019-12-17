@@ -11,3 +11,8 @@ And available products : Paket Geprek Bensu, Whopper
 When the user favorited Paket Geprek Bensu 
 Then the user should have : Paket Geprek Bensu in their favorited products
 
+Scenario: Unfavoriting a product 
+Given a user with favorited products
+And List of favorited products are : Paket Geprek Bensu, Whopper in their favorited products
+When the user unfavorited Whopper
+Then the user should have : Paket Geprek Bensu in their favorited products

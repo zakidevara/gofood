@@ -5,23 +5,95 @@
   <iWantTo keyword="I want to">know which products are on sale</iWantTo>
 </narrative>
 <scenario keyword="Scenario:" title="Find products on sale">
-<step outcome="successful">Given a list of products : <parameter>Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</parameter></step>
-<step outcome="successful">When these products are discounted in the same order: <parameter>20%, 0%, 40%</parameter></step>
-<step outcome="successful">Then I should be told about the products : <parameter>Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium</parameter></step>
+<step outcome="pending" keyword="PENDING">Given a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</step>
+<step outcome="pending" keyword="PENDING">When these products are discounted in the same order: 20%, 0%, 40%</step>
+<step outcome="pending" keyword="PENDING">Then I should be told about the products : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium</step>
+<pendingMethod>@Given(&quot;a list of products : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium&quot;)
+@Pending
+public void givenAListOfProductsWhopperMealMediumPaketGeprekBensuPaketMcSpicySmokeyBBQMedium() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;these products are discounted in the same order: 20%, 0%, 40%&quot;)
+@Pending
+public void whenTheseProductsAreDiscountedInTheSameOrder20040() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;I should be told about the products : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium&quot;)
+@Pending
+public void thenIShouldBeToldAboutTheProductsWhopperMealMediumPaketMcSpicySmokeyBBQMedium() {
+  // PENDING
+}
+</pendingMethod>
 </scenario>
 <scenario keyword="Scenario:" title="Sort products on sale from the closest distance to the furthest">
-<step outcome="successful">Given a list of products on sale : <parameter>Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</parameter></step>
-<step outcome="successful">When the distances between the product and the customer in the same order are : <parameter>0.4, 1.9, 0.8</parameter> in kilometers</step>
-<step outcome="successful">Then I should be told about the products from the closest distance to the furthest : <parameter>Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu</parameter></step>
+<step outcome="pending" keyword="PENDING">Given a list of products on sale : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</step>
+<step outcome="pending" keyword="PENDING">When the distances between the product and the customer in the same order are : 0.4, 1.9, 0.8 in kilometers</step>
+<step outcome="pending" keyword="PENDING">Then I should be told about the products from the closest distance to the furthest : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu</step>
+<pendingMethod>@Given(&quot;a list of products on sale : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium&quot;)
+@Pending
+public void givenAListOfProductsOnSaleWhopperMealMediumPaketGeprekBensuPaketMcSpicySmokeyBBQMedium() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;the distances between the product and the customer in the same order are : 0.4, 1.9, 0.8 in kilometers&quot;)
+@Pending
+public void whenTheDistancesBetweenTheProductAndTheCustomerInTheSameOrderAre041908InKilometers() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;I should be told about the products from the closest distance to the furthest : Whopper Meal Medium, Paket McSpicy Smokey BBQ Medium, Paket Geprek Bensu&quot;)
+@Pending
+public void thenIShouldBeToldAboutTheProductsFromTheClosestDistanceToTheFurthestWhopperMealMediumPaketMcSpicySmokeyBBQMediumPaketGeprekBensu() {
+  // PENDING
+}
+</pendingMethod>
 </scenario>
 <scenario keyword="Scenario:" title="Sort products on sale with the same distance from the highest rate">
-<step outcome="successful">Given a list of products on sale with the same distance : <parameter>Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</parameter></step>
-<step outcome="successful">When the rates of the products are : <parameter>4, 3.9, 4.5</parameter> in stars</step>
-<step outcome="successful">Then I should be told about the products in order from the highest rating to the lowest : <parameter>Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu</parameter></step>
+<step outcome="pending" keyword="PENDING">Given a list of products on sale with the same distance : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium</step>
+<step outcome="pending" keyword="PENDING">When the rates of the products are : 4, 3.9, 4.5 in stars</step>
+<step outcome="pending" keyword="PENDING">Then I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu</step>
+<pendingMethod>@Given(&quot;a list of products on sale with the same distance : Whopper Meal Medium, Paket Geprek Bensu, Paket McSpicy Smokey BBQ Medium&quot;)
+@Pending
+public void givenAListOfProductsOnSaleWithTheSameDistanceWhopperMealMediumPaketGeprekBensuPaketMcSpicySmokeyBBQMedium() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;the rates of the products are : 4, 3.9, 4.5 in stars&quot;)
+@Pending
+public void whenTheRatesOfTheProductsAre43945InStars() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;I should be told about the products in order from the highest rating to the lowest : Paket McSpicy Smokey BBQ Medium, Whopper Meal Medium, Paket Geprek Bensu&quot;)
+@Pending
+public void thenIShouldBeToldAboutTheProductsInOrderFromTheHighestRatingToTheLowestPaketMcSpicySmokeyBBQMediumWhopperMealMediumPaketGeprekBensu() {
+  // PENDING
+}
+</pendingMethod>
 </scenario>
 <scenario keyword="Scenario:" title="Sort products on sale by category if distance and rating are the same">
-<step outcome="successful">Given a list of products on sale with the same distance and rating : <parameter>Bubble Gum Fizz, Big Mac, Fanta McFloat</parameter></step>
-<step outcome="successful">When the category of products are : <parameter>Drink, Food, Drink</parameter></step>
-<step outcome="successful">Then I should be told about the products in order from foods to drinks : <parameter>Big Mac, Bubble Gum Fizz, Fanta McFloat</parameter></step>
+<step outcome="pending" keyword="PENDING">Given a list of products on sale with the same distance and rating : Bubble Gum Fizz, Big Mac, Fanta McFloat</step>
+<step outcome="pending" keyword="PENDING">When the category of products are : Drink, Food, Drink</step>
+<step outcome="pending" keyword="PENDING">Then I should be told about the products in order from foods to drinks : Big Mac, Bubble Gum Fizz, Fanta McFloat</step>
+<pendingMethod>@Given(&quot;a list of products on sale with the same distance and rating : Bubble Gum Fizz, Big Mac, Fanta McFloat&quot;)
+@Pending
+public void givenAListOfProductsOnSaleWithTheSameDistanceAndRatingBubbleGumFizzBigMacFantaMcFloat() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;the category of products are : Drink, Food, Drink&quot;)
+@Pending
+public void whenTheCategoryOfProductsAreDrinkFoodDrink() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;I should be told about the products in order from foods to drinks : Big Mac, Bubble Gum Fizz, Fanta McFloat&quot;)
+@Pending
+public void thenIShouldBeToldAboutTheProductsInOrderFromFoodsToDrinksBigMacBubbleGumFizzFantaMcFloat() {
+  // PENDING
+}
+</pendingMethod>
 </scenario>
 </story>

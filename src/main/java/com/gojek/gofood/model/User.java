@@ -28,4 +28,8 @@ public class User {
 		favoriteProducts.add(favoritedProduct);
 	}
 	
+	public void removeFavoriteProduct(Product unfavoritedProduct) {
+		favoriteProducts.remove(unfavoritedProduct);
+	}
+	
 }

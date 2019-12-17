@@ -11,6 +11,7 @@ import static org.fest.assertions.Assertions.assertThat;
 public class makanan_favorite_steps {
 	User user;
 	ArrayList<Product> products;
+	ArrayList<Product> favoritedProducts;
 	ProductService productService;
 	
 	//Scenario 1
@@ -40,4 +41,27 @@ public class makanan_favorite_steps {
 		Product expected = productService.find(favoritedProductName);
 		assertThat(expected).isIn(user.getFavoriteProducts());
 	}
+	
+	//Scenario 2 
+	@Given("a user with favorited products")
+	public void givenUserWithFavoritedProducts() {
+		user = new User();
+	}
+	
+	@Given("List of favorited products are : $favoritedProductName in their favorited products")
+	public void givenListOfFavoritedProducts(List<String> favoritedProductName) {
+		favoritedProducts = new ArrayList<Product>();
+		for (String e : favoritedProductName) {
+			products.add(new Product(e));
+		}		
+	}
+	
+	@When("the user unfavorited $productName")
+	public void whenUserUnfavoritedAProduct(String productName) {
+		productService = new ProductService(products);
+		Product unfavoritedProduct = productService.find(productName);
+		user.removeFavoriteProduct(unfavoritedProduct);
+	}
+	
+	
 }
