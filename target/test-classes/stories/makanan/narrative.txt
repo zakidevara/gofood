@@ -1,2 +1,0 @@
-Makanan
-Menampilkan rekomendasi makanan kepada pelanggan

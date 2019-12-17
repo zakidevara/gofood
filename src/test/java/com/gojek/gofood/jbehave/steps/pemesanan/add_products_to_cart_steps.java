@@ -1,5 +1,6 @@
 package com.gojek.gofood.jbehave.steps.pemesanan;
 import java.util.ArrayList;
+import java.time.LocalTime;
 import java.util.List;
 import com.gojek.gofood.model.*;
 import com.gojek.gofood.services.*;
@@ -51,4 +52,38 @@ public class add_products_to_cart_steps {
 		assertThat(addedItem.getQuantity()).isEqualTo(expectedItem.getQuantity());
 	}
 	
+	//Scenario 2
+	@Given("an empty cart")
+	public void givenAnEmptyCart() {
+		cart = new ShoppingCart();
+	}
+	
+	@Given("product Ayam Pedas Santuy from AyamEnak")
+	public void addProductAndMerchant(String productName,String merchantName) {
+		products = new ArrayList<Product>();
+		for(String e : givenProducts) {
+			products.add(new Product(e,new Merchant()));
+		}	
+		CartItem addedItem = products.add(products.get(0));
+	}
+	
+	@Given("AyamEnak opens at 11:00 until 20:00")
+	public void addMarchantOpenClosed(String expectedMerchantName, LocalTime openTime, LocalTime closedTime) {
+		this.addMarchantOpenClosed(expectedMerchantName, openTime, closedTime);
+	}
+	
+	@When("I add Ayam Pedas Santuy to the cart at 09:00")
+	public void addProdukAndTime(String productName, LocalTime buyProduct) {
+		Product addedProduct;
+		productService = new ProductService(products);
+		addedProduct = productService.find(productName);
+		CartItem item = new CartItem(addedProduct, buyProduct);
+	}
+	@Then("there should be empty cart ")
+	public void thenCartShoulbeEmptyCart(String expectedProductName) {
+		CartItem addedItem = cart.find(expectedProductName);
+		assertThat(addedItem.getName()).isEqualTo(null);
+	}
+	
 }
+

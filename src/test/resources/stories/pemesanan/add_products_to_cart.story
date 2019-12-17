@@ -11,3 +11,9 @@ And the product's merchants in the same order are : Burger King, Geprek Bensu, M
 When I add 2 of Whopper Meal Medium to the cart
 Then there should be 2 of Whopper Meal Medium inside the cart
 
+Scenario: Adding a product when merchant closed
+Given an empty cart
+And product Ayam Pedas Santuy from AyamEnak
+And AyamEnak opens at 11:00 until 20:00
+When I add 2 Ayam Pedas Santuy to the cart at 09:00
+then there should be empty cart 
