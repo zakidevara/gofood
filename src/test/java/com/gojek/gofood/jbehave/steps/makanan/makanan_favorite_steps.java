@@ -11,6 +11,8 @@ import static org.fest.assertions.Assertions.assertThat;
 public class makanan_favorite_steps {
 	User user;
 	ArrayList<Product> products;
+	ArrayList<Product> favoritedProducts;
+	ArrayList<String> proposedProducts;
 	ProductService productService;
 	
 	//Scenario 1
@@ -39,5 +41,36 @@ public class makanan_favorite_steps {
 	public void thenUserShouldHave(String favoritedProductName) {
 		Product expected = productService.find(favoritedProductName);
 		assertThat(expected).isIn(user.getFavoriteProducts());
+	}
+	
+	//Scenario 2
+	@Given("a list of favorited products")
+	public void givenUserWithFavoritedProducts() {
+		user = new User();
+	}
+	
+	@Given("list of favorited products are: $favoritedProductName in their favorited products")
+	public void givenListOfFavoritedProducts(List<String> favoritedProductName) {
+		favoritedProducts = new ArrayList<Product>();
+		for (String e : favoritedProductName) {
+			user.addFavoriteProduct(new Product(e));
+		}
+	}
+	
+	@When("the dates of the favorited products are: $favoritedDates")
+	public void whenDatesOfTheFavoritedProducts(List<String> favoritedDates) {
+		int i=0;
+		for (Product e : favoritedProducts) {
+			e.setFavorited(favoritedDates.get(i));
+			i++;
+		}
+		productService = new ProductService(favoritedProducts);
+		proposedProducts = productService.getFavoritedProductsName();
+		
+	}
+	
+	@Then("the user should have: $favoriteProductsByDates in their favorited products")
+	public void thenFavoriteProductsByDates(List<String> favoriteProductByDates) {
+		assertThat(proposedProducts).isEqualTo(favoriteProductByDates);
 	}
 }

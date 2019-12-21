@@ -6,6 +6,7 @@ public class Product {
 	private float price;
 	private Merchant merchant;
 	private String category;
+	private String favorited;
 
 	
 	//Constructors
@@ -59,6 +60,13 @@ public class Product {
 
 	public String getCategory() {return category;}
 	public void setCategory(String newCategory) {category = newCategory;}
+
+	public void setFavorited(String newFavorited) {
+		favorited = newFavorited;
+	}
+	public String getFavorited() {return favorited;}
+
+	
 
 
 }

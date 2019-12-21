@@ -33,6 +33,12 @@ public class ProductService {
 		}
 	}
 	
+	private class FavoritedComparator implements Comparator<Product> {
+		public int compare(Product product1, Product product2) {
+			return((String) (product1.getFavorited())).compareTo( (String)product2.getFavorited());
+		}
+	}
+	
 	public ProductService(List<Product> pl) {
 		productsList = pl;
 	}	
@@ -121,6 +127,20 @@ public class ProductService {
 			}
 		}
 		LOGGER.log(Level.INFO, "Product not found in " + stopwatch.elapsed(TimeUnit.NANOSECONDS) + " nanoseconds");
+		return null;
+	}
+
+	public ArrayList<String> getFavoritedProductsName() {
+		LOGGER.log(Level.INFO, "Running " + (new Throwable()).getStackTrace()[0].getMethodName() + "()");
+		Stopwatch stopwatch = Stopwatch.createStarted();
+		
+		ArrayList<String> result = new ArrayList<String>();
+		Collections.sort(productsList, Collections.reverseOrder(new FavoritedComparator()));
+		for(Product e : productsList) {
+			result.add(e.getName());
+		}
+		stopwatch.stop();
+		LOGGER.log(Level.INFO, "Finished in " + stopwatch.elapsed(TimeUnit.NANOSECONDS) + " nanoseconds");
 		return null;
 	}
 	
